@@ -2,9 +2,14 @@
 
 // Color palette
 $background: #FBFBFB;
+$lightShades: #E4E4E4;
+$lightAccent: #797FA4;
+$mainBrand: #843744;
+$darkAccent: #C17A4F;
+$darkShades: #21293F;
 
 body {
-    background-color: $background;
+    background-color: $darkShades;
     font-family: Lato, Helvetica, sans-serif;
     margin: 0;
 }

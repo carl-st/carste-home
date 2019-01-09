@@ -2,27 +2,25 @@
 
 .content {
     margin: 40px;
-
-    &-header {
-        display: flex;
-        flex-flow: row;
-        justify-content: space-between;
-        vertical-align: middle;
-    }
 }
 
 section {
-    display: -webkit-flex;
     display: flex;
+    justify-content: space-around;
+    height: 400px;
+    position: relative;
+
+    .about {
+        min-height: 300px;
+    }
 }
 
-@media (max-width: 960px) {
-    .content-header {
-        flex-flow: column;
-    }
-
-    section {
-        flex-direction: column;
-        -webkit-flex-direction: column;
+div {
+    .container {
+        flex: 1;
+        background-color: $lightShades;
+        border-radius: 4px;
+        height: 80%;
+        max-width: 200px;
     }
 }
