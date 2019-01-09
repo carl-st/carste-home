@@ -1,0 +1,15 @@
+{
+    "presets": [
+      ["@babel/env", {
+        "targets": {
+          "browsers": ["last 1 Chrome versions"]
+        }
+      }],
+      
+  ],
+    "plugins": [
+      "@babel/transform-async-to-generator",
+      "@babel/transform-regenerator",
+      "@babel/transform-destructuring"
+    ]
+  }

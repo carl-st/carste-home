@@ -1,0 +1,35 @@
+@import './main.scss';
+
+.navigation {
+    background-color: #2C6FA4;
+    color: white;
+    display: flex;
+    height: auto;
+    overflow: hidden;
+    padding: 10px 40px;
+    width: 100%;
+    
+    .name-container .name, .name-suffix  {
+        flex: 1;
+        display: inline;
+        font-size: 40px;
+        font-weight: 100;
+        &-suffix {
+            font-weight: 400;
+        }
+    }
+
+    .sections {
+        align-items: center;
+        display: flex;
+        flex: 1;
+        justify-content: space-around;
+        text-align: center;
+
+        span {
+            flex: 1;
+            font-size: 18px;
+            font-weight: 100;
+        }
+    }
+}

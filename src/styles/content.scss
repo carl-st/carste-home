@@ -1,0 +1,28 @@
+@import './main.scss';
+
+.content {
+    margin: 40px;
+
+    &-header {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        vertical-align: middle;
+    }
+}
+
+section {
+    display: -webkit-flex;
+    display: flex;
+}
+
+@media (max-width: 960px) {
+    .content-header {
+        flex-flow: column;
+    }
+
+    section {
+        flex-direction: column;
+        -webkit-flex-direction: column;
+    }
+}
