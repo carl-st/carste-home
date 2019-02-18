@@ -53,7 +53,18 @@ module.exports = {
             {
                 test: /\.css$/,
                 loader: 'style-loader!css-loader'
-            }
+            },
+            {
+                test: /\.(png|jpg|gif|svg|otf)$/i,
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            limit: 8192,
+                        },
+                    },
+                ],
+            },
         ]
     },
 

@@ -1,12 +1,17 @@
+import Typewriter from 'typewriter-effect/dist/core';
+import { paths, globalConstants } from './../constants/';
+import { fetchData } from './api';
 import './../styles/main.scss';
 import './../styles/content.scss';
 import './../styles/navigation.scss';
-import { paths, globalConstants } from './../constants/';
-import { fetchData } from './api';
 
-const aboutMeContainer = document.getElementById("about-container");
-fetchData(globalConstants.GET_STRING, paths.ABOUT_ME_FILE, handleResponse);
-aboutMeContainer.innerText = "";
+const typewriterElement = document.getElementById('typewriter');
+const words = ['Cześć.', 'Hello.', 'Holá.','Ciao.', 'Hej.', 'Ahoj.', 'Olá.', 'Hallo.', 'Bonjour.', 'Hallå.'].map(word =>  word.toUpperCase() );
+new Typewriter('#typewriter', {
+    strings: words,
+    autoStart: true,
+    loop: true,
+});
 
 function handleResponse (status, readyState, responseText) {
     if (readyState == 4 && status == 200) {
