@@ -1,23 +1,19 @@
 const webpack = require('webpack');
 const Merge = require('webpack-merge');
 const MainConfig = require('./webpack.main.js');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = Merge(MainConfig, {
     mode: 'production',
-    optimization:{
-        minimize: true,
+    optimization: {
         minimizer: [
-            new UglifyJsPlugin({
-                sourceMap: false,
-                uglifyOptions: {
+            new TerserPlugin({
+                parallel: true,
+                terserOptions: {
                     ecma: 7,
-                    warnings: false,
-                    compress: true,
-                    toplevel: false
-                }
-            })
-        ]
+                },
+            }),
+        ],
     },
     plugins: [
         new webpack.LoaderOptionsPlugin({

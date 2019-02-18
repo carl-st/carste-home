@@ -1,15 +1,27 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100,400");
+@font-face {
+    font-family: "Kielo";
+    src: url("./../assets/fonts/Kielo-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: "Rentukka";
+    src: url("./../assets/fonts/Rentukka-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: "Anson";
+    src: url("./../assets/fonts/Anson-Regular.otf") format("opentype");
+}
 
 // Color palette
 $background: #FBFBFB;
-$lightShades: #E4E4E4;
-$lightAccent: #797FA4;
-$mainBrand: #843744;
-$darkAccent: #C17A4F;
-$darkShades: #21293F;
+$lightShades: #F9F7FB;
+$lightAccent: #988581;
+$mainBrand: #DEAB4C;
+$darkAccent: #805E32;
+$darkShades: #201F2D;
 
 body {
     background-color: $darkShades;
-    font-family: Lato, Helvetica, sans-serif;
+    font-family: Anson, Helvetica, sans-serif;
     margin: 0;
 }
