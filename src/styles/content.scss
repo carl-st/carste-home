@@ -10,6 +10,10 @@ section {
     height: 400px;
     position: relative;
 
+    .banner {
+        min-height: 100vh;
+    } 
+
     .about {
         min-height: 300px;
     }
