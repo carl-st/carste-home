@@ -27,7 +27,10 @@ $warning: #F59F17;
 $danger: #F44336;
 
 body {
-    background-color: $darkShades;
+    // background-color: $darkShades;
+    background-image: url("./../assets/img/background.jpg");
+    background-size: cover;
+    background-position: center;
     font-family: Anson, Helvetica, sans-serif;
     margin: 0;
 }

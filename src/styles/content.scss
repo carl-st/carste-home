@@ -20,12 +20,20 @@ section {
     &.banner {
         flex-direction: column;
         align-items: center;
-        height: calc(100vh - 68px);
+        height: calc(100vh - 40px);
         font-family: Kielo;
+
+        @media screen and (min-width: 760px) {
+            height: calc(100vh - 80px);
+        }
 
         #typewriter {
             color: $mainBrand;
-            font-size: 4rem;
+            font-size: 3rem;
+
+            @media screen and (min-width: 460px) {
+                font-size: 4rem;
+            }
             
             @media screen and (min-width: 760px) {
                 font-size: 8rem;
