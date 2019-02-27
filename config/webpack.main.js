@@ -74,10 +74,23 @@ module.exports = {
         new CopyWebpackPlugin([{
             from: './assets/',
             to: './assets/',
-        }]),
+        },
+        {
+            from: './scripts/workers/',
+            to: './',
+        },
+        {
+            from: './assets/other/',
+            to: './',
+        }
+    ]),
         new HtmlWebpackPlugin({
             template: 'index.html',
             inject: true
+        }),
+        new HtmlWebpackPlugin({
+            template: '404.html',
+            filename: '404.html'
         })
     ]
 };
