@@ -1,19 +1,15 @@
 import Typewriter from 'typewriter-effect/dist/core';
 import { paths, globalConstants } from './../constants/';
+// import * as serviceWorker from './workers/service-worker';
 import './../styles/main.scss';
 import './../styles/content.scss';
 import './../styles/navigation.scss';
 
-const isServiceWorkersSupported = ('serviceWorker' in navigator);
-
-if (isServiceWorkersSupported) {
-    console.log('Will service worker register?');
-    navigator.serviceWorker.register('/assets/service-worker.js').then(function () {
-        console.log("Yes it did.");
-    }).catch(function (err) {
-        console.log("No it didn't. This happened: ", err)
-    });
-}
+navigator.serviceWorker.register('/assets/service-worker.js').then(function () {
+    console.log("Yes it did.");
+}).catch(function (err) {
+    console.log("No it didn't. This happened: ", err)
+});
 
 const words = ['Cześć.', 'Hello.', 'Holá.','Ciao.', 'Hej.', 'Ahoj.', 'Olá.', 'Hallo.', 'Bonjour.', 'Hallå.'].map(word =>  word.toUpperCase() );
 new Typewriter('#typewriter', {
