@@ -4,9 +4,9 @@ const BASE_CACHE_FILES = [
     '/app.js',
 ];
 
-const OFFLINE_CACHE_FILES = [ '/app.js', '/index.html'];
+const OFFLINE_CACHE_FILES = [ '/app.js', '/index.html', '/404.html'];
 
-const NOT_FOUND_CACHE_FILES = ['/index.html', '/app.js'];
+const NOT_FOUND_CACHE_FILES = ['/404.html'];
 
 const OFFLINE_PAGE = '/offline/index.html';
 const NOT_FOUND_PAGE = '/404.html';

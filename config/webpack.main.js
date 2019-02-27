@@ -77,12 +77,20 @@ module.exports = {
         },
         {
             from: './scripts/workers/',
-            to: './assets/',
+            to: './',
+        },
+        {
+            from: './assets/other/',
+            to: './',
         }
     ]),
         new HtmlWebpackPlugin({
             template: 'index.html',
             inject: true
+        }),
+        new HtmlWebpackPlugin({
+            template: '404.html',
+            filename: '404.html'
         })
     ]
 };
