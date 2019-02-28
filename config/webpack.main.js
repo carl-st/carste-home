@@ -80,7 +80,7 @@ module.exports = {
             to: './',
         },
         {
-            from: './assets/other/',
+            from: './other/',
             to: './',
         }
     ]),
