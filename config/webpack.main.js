@@ -90,7 +90,8 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             template: '404.html',
-            filename: '404.html'
+            filename: '404.html',
+            inject: true
         })
     ]
 };
