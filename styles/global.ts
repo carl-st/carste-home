@@ -9,7 +9,7 @@ export default css.global`
   }
   @font-face {
     font-family: 'Rentukka';
-    src: url('onts/Rentukka-Regular.otf') format('opentype');
+    src: url('fonts/Rentukka-Regular.otf') format('opentype');
   }
   @font-face {
     font-family: 'Anson';
@@ -22,7 +22,7 @@ export default css.global`
 
   body {
     background-color: ${theme.colors.darkShades};
-    background-image: url('/img/background.jpg');
+    /* background-image: url('/img/background.jpg'); */
     background-size: cover;
     background-position: center;
     font-family: ${theme.fontFamily.sansSerif};

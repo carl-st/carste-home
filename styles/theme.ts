@@ -1,14 +1,14 @@
 const theme = {
   fontFamily: {
     serif: 'Domine, Times New Roman, serif',
-    sansSerif: 'Anson, Helvetica, sans-serif',
+    sansSerif: 'Rentukka, Helvetica, sans-serif',
     mono: 'Planck, Menlo, Monaco, monospace',
     mainBrand: 'Kielo, Helvetica, sans-serif',
   },
   breakpoints: {
-    mobile: 320,
-    tablet: 720,
-    desktop: 1024,
+    mobile: '320px',
+    tablet: '720px',
+    desktop: '1024px',
   },
   colors: {
     background: '#FBFBFB',

@@ -2,10 +2,6 @@ import React from 'react';
 import Link from 'next/link';
 import theme from '../styles/theme';
 
-const linkStyle = {
-  marginRight: 15,
-};
-
 const Header: React.FunctionComponent = () => (
   <>
     <style jsx global>{`
@@ -21,6 +17,12 @@ const Header: React.FunctionComponent = () => (
         transition: height 0.3s ease-in;
         z-index: 1;
       }
+
+      .name-container {
+        display: flex;
+        align-items: center;
+      }
+
       .name-container .name {
         flex: 1;
         color: ${theme.colors.mainBrand};
@@ -34,26 +36,27 @@ const Header: React.FunctionComponent = () => (
         align-items: center;
         display: flex;
         flex: 1;
-        justify-content: space-around;
+        justify-content: flex-end;
         max-width: 400px;
         text-align: center;
       }
-      button {
+
+      .navigation-button {
         background: transparent;
         border: none;
         flex: 1;
         font-family: ${theme.fontFamily.sansSerif};
-        font-size: 16px;
+        font-size: 1.6rem;
         font-weight: 100;
-        height: 80%;
-        max-width: 120px;
-        transform: scale(1);
-        transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+        line-height: 3rem;
+        min-width: 120px;
       }
-      button:hover {
+      
+      .navigation-button:hover {
         background: ${theme.colors.mainBrand};
         border-radius: 4px;
         color: white;
+        cursor: pointer;
       }
     `}</style>
     <div className="navigation">
@@ -62,17 +65,11 @@ const Header: React.FunctionComponent = () => (
       </div>
       <div className="navigation-buttons">
         <Link href="/">
-          <span style={linkStyle}>O mnie</span>
+          <div className="navigation-button">O mnie</div>
         </Link>
         <Link href="/podcast">
-          <span style={linkStyle}>Podkast</span>
+          <div className="navigation-button">Podkast</div>
         </Link>
-        {/* <Link href="/blog">
-        <span style={linkStyle}>Blog</span>
-      </Link>
-      <Link href="/admin">
-        <span style={linkStyle}>Admin</span>
-      </Link> */}
       </div>
     </div>
   </>

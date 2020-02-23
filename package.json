@@ -17,6 +17,7 @@
     "react-dom": "16.12.0"
   },
   "devDependencies": {
+    "@svgr/webpack": "^5.2.0",
     "@types/node": "^13.7.4",
     "@types/react": "^16.9.22",
     "@types/styled-jsx": "^2.2.8",

@@ -4,12 +4,6 @@ import Header from './Header';
 import AdminHeader from './AdminHeader';
 import globalStyles from '../styles/global';
 
-// const layoutStyle = {
-//   margin: 20,
-//   padding: 20,
-//   border: '1px solid #DDD',
-// };
-
 type Props = {
   children: ReactNode;
   isAdmin?: boolean;
