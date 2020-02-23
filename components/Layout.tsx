@@ -2,12 +2,13 @@ import React, { ReactNode } from 'react';
 import { NextPage } from 'next';
 import Header from './Header';
 import AdminHeader from './AdminHeader';
+import globalStyles from '../styles/global';
 
-const layoutStyle = {
-  margin: 20,
-  padding: 20,
-  border: '1px solid #DDD',
-};
+// const layoutStyle = {
+//   margin: 20,
+//   padding: 20,
+//   border: '1px solid #DDD',
+// };
 
 type Props = {
   children: ReactNode;
@@ -15,10 +16,13 @@ type Props = {
 };
 
 const Layout: NextPage<Props> = ({ isAdmin, children }) => (
-  <div style={layoutStyle}>
+  <>
+    <style jsx global>
+      {globalStyles}
+    </style>
     {isAdmin ? <AdminHeader /> : <Header />}
     {children}
-  </div>
+  </>
 );
 
 export default Layout;
