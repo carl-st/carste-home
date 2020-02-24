@@ -1,6 +1,6 @@
 import Layout from '../../components/Layout';
 import theme from '../../styles/theme';
-import Logo from '../../public/img/podcast-waves.svg';
+import Logo from '../../public/img/podcast-logo.svg';
 
 const Admin = () => {
   return (
@@ -13,15 +13,14 @@ const Admin = () => {
           flex-direction: column;
         }
 
+        .cover-container {
+          flex: 2;
+        }
+
         .name-container {
-          color: white;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          font-family: ${theme.fontFamily.mono};
-          font-size: 2rem;
-          text-align: right;
-          padding: 20px;
+          background-color: ${theme.colors.mainBrand};
+          flex: 1;
+          padding: 40px;
         }
 
         .logo-container {
@@ -39,8 +38,13 @@ const Admin = () => {
         }
 
         .description {
-          background-color: ${theme.colors.mainBrand};
           min-height: 500px;
+        }
+
+        .description-container {
+          padding: 40px;
+          width: 100%;
+          color: white;
         }
 
         @media (min-width: ${theme.breakpoints.tablet}) {
@@ -54,7 +58,8 @@ const Admin = () => {
           }
 
           .name-container {
-            font-size: 5rem;
+            background-color: transparent;
+            flex: 1;
             padding: 40px;
           }
 
@@ -65,6 +70,14 @@ const Admin = () => {
           .cover-image {
             height: auto;
             width: 100%;
+          }
+
+          .description {
+            background-color: ${theme.colors.mainBrand};
+          }
+
+          .description-container {
+            max-width: 300px;
           }
         }
       `}</style>
@@ -77,13 +90,19 @@ const Admin = () => {
           />
         </div>
         <div className="name-container">
-          <div className="logo-container">
-            <Logo />
-          </div>
-          <div className="title-container">Glosariusz Programisty</div>
+          <Logo />
         </div>
       </section>
-      <section className="description"></section>
+      <section className="description">
+        <div className="description-container">
+          Commit, React, Deployment, CI/CD, Fullstack... Branża IT pełna jest
+          trudnych nazw, zapożyczeń oraz skrótów, w których bardzo łatwo się
+          pogubić. Każdy odcinek wyjaśnia kilka z nich. Posłuchaj niezależnie od
+          tego czy Twoja przygoda z programowaniem się zaczyna, masz już trochę
+          doświadczenia, czy może po prostu chcesz zrozumieć o co chodzi tym
+          wszystkim nerdom!
+        </div>
+      </section>
     </Layout>
   );
 };

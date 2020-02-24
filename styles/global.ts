@@ -21,8 +21,8 @@ export default css.global`
   }
 
   body {
+    box-sizing: border-box;
     background-color: ${theme.colors.darkShades};
-    /* background-image: url('/img/background.jpg'); */
     background-size: cover;
     background-position: center;
     font-family: ${theme.fontFamily.sansSerif};
