@@ -20,6 +20,10 @@ export default css.global`
     src: url('fonts/Planck-Regular.otf') format('opentype');
   }
 
+  * {
+    box-sizing: border-box;
+  }
+
   body {
     box-sizing: border-box;
     background-color: ${theme.colors.darkShades};

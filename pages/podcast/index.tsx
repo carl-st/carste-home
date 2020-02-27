@@ -29,10 +29,6 @@ const Admin = () => {
           margin-right: 30px;
         }
 
-        .title-container {
-          max-width: 180px;
-        }
-
         .cover-image {
           height: 300px;
         }
@@ -63,10 +59,6 @@ const Admin = () => {
             padding: 40px;
           }
 
-          .title-container {
-            max-width: 400px;
-          }
-
           .cover-image {
             height: auto;
             width: 100%;
@@ -77,7 +69,7 @@ const Admin = () => {
           }
 
           .description-container {
-            max-width: 300px;
+            max-width: 400px;
           }
         }
       `}</style>
