@@ -28,7 +28,6 @@ const Admin = () => {
         }
 
         .logo {
-          height: 100%;
           width: 100%;
         }
 
@@ -42,14 +41,19 @@ const Admin = () => {
           display: none;
         }
 
+        .players {
+          display: flex;
+          justify-content: center;
+        }
+
         .description {
           min-height: 500px;
         }
 
         .description-container {
-          padding: 4rem 20%;
           width: 100%;
           color: white;
+          padding: 2rem;
         }
 
         @media (min-width: ${theme.breakpoints.tablet}) {
@@ -67,6 +71,7 @@ const Admin = () => {
             background-color: transparent;
             flex: 1;
             padding: 40px;
+            color: white;
           }
 
           .cover-image {
@@ -77,6 +82,10 @@ const Admin = () => {
             display: block;
             height: 100%;
             width: 100%;
+          }
+
+          .description-container {
+            padding: 4rem 20%;
           }
         }
       `}</style>
@@ -99,7 +108,11 @@ const Admin = () => {
             data="/img/podcast-logo.svg"
             type="image/svg+xml"
           />
-          {/* <Logo /> */}
+          <div className="players">
+            <p>Spotify</p>
+            <p>Podcasts</p>
+            <p>YouTube</p>
+          </div>
         </div>
       </section>
       <section className="description">

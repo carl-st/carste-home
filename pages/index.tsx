@@ -8,13 +8,15 @@ const Index = () => (
       section {
         display: flex;
         justify-content: center;
+        flex-direction: column;
         position: relative;
-        padding: 0 20% 2rem;
+        padding: 4rem 2rem;
+        align-items: center;
       }
 
       section.banner {
         color: ${theme.colors.mainBrand};
-        background-image: url("/img/background.jpg");
+        background-image: url('/img/background.jpg');
         background-position: center;
         background-size: cover;
         height: calc(100vh - ${theme.sizes.headerHeight});
@@ -27,7 +29,8 @@ const Index = () => (
 
       .text-container {
         flex: 2;
-        margin-left: 4rem;
+        margin-top: 2rem;
+        text-align: center;
       }
 
       .text-container h1 {
@@ -37,9 +40,21 @@ const Index = () => (
       .profile-image {
         max-width: 200px;
         border-radius: 50%;
-        border: 8px solid ${theme.colors.mainBrand}
+        border: 8px solid ${theme.colors.mainBrand};
       }
 
+      @media (min-width: ${theme.breakpoints.tablet}) {
+        section {
+          flex-direction: row;
+          padding: 0 20% 2rem;
+        }
+
+        .text-container {
+          flex: 2;
+          margin: 0 0 0 4rem;
+          text-align: left;
+        }
+      }
     `}</style>
     <section className="banner">
       <div className="image-container">
@@ -48,7 +63,7 @@ const Index = () => (
       <div className="text-container">
         <h1>Karol Stępień</h1>
         <h2>Senior Fullstack Engineer</h2>
-        <ShareBar /> 
+        <ShareBar />
       </div>
     </section>
   </Layout>

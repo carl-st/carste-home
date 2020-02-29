@@ -36,7 +36,7 @@ export default css.global`
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: ${theme.fontFamily.heading};
     text-transform: uppercase;
     font-weight: 900;
@@ -45,7 +45,7 @@ export default css.global`
   }
 
   h2 {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-family: ${theme.fontFamily.heading};
     font-weight: 400;
 
@@ -55,5 +55,15 @@ export default css.global`
     font-family: ${theme.fontFamily.paragraph};
     font-size: 1rem;
     font-weight: 300;
+  }
+
+  @media (min-width: ${theme.breakpoints.tablet}) {
+    h1 {
+      font-size: 3rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+    }
   }
 `;

@@ -89,7 +89,7 @@ const ShareBar: React.FunctionComponent = () => (
       <a
         aria-label="Twitter"
         className="fontawesome"
-        href="https://twitter.com/carlst3"
+        href="https://twitter.com/karlos.stepien"
       >
         <FontAwesomeIcon icon={faTwitter} />
       </a>
