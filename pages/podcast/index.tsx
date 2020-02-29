@@ -15,6 +15,7 @@ const Admin = () => {
 
         .cover-container {
           flex: 2;
+          overflow: hidden;
         }
 
         .name-container {
@@ -59,6 +60,7 @@ const Admin = () => {
         @media (min-width: ${theme.breakpoints.tablet}) {
           .banner {
             flex-direction: row;
+            height: calc(100vh - ${theme.sizes.headerHeight});
           }
 
           .logo-container {
@@ -67,9 +69,16 @@ const Admin = () => {
           }
 
           .name-container {
-            display: block;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             background-color: transparent;
             flex: 1;
+            height: 100%;
+            max-width: 50%;
+            right: 0;
             padding: 40px;
             color: white;
           }
@@ -79,9 +88,8 @@ const Admin = () => {
           }
 
           .cover-image-wide {
-            display: block;
+            display: block; 
             height: 100%;
-            width: 100%;
           }
 
           .description-container {
