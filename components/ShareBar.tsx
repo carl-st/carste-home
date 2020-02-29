@@ -15,7 +15,6 @@ const ShareBar: React.FunctionComponent = () => (
         display: flex;
         justify-content: space-around;
         width: auto;
-        align-items: center;
       }
 
       .social a {
@@ -30,7 +29,7 @@ const ShareBar: React.FunctionComponent = () => (
         height: 40px;
         width: 40px;
         max-width: 40px;
-        margin: 2px 5px;
+        margin-right: 5px;
         transition: border-color 0.2s linear;
       }
 
@@ -50,14 +49,14 @@ const ShareBar: React.FunctionComponent = () => (
       @media (min-width: ${theme.breakpoints.tablet}) {
         .social {
           width: auto;
-          justify-content: center;
+          justify-content: flex-start;
         }
 
         .social a {
           width: 50px;
           max-width: 50px;
           height: 50px;
-          margin: 0 10px;
+          margin-right: 10px;
         }
 
         .fontawesome {

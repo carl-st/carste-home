@@ -10,7 +10,7 @@ const Header: React.FunctionComponent = () => (
         color: black;
         display: flex;
         justify-content: space-between;
-        min-height: 68px;
+        min-height: ${theme.sizes.headerHeight};
         overflow: hidden;
         padding: 10px 40px;
         top: 0;
@@ -45,13 +45,14 @@ const Header: React.FunctionComponent = () => (
         background: transparent;
         border: none;
         flex: 1;
-        font-family: ${theme.fontFamily.sansSerif};
+        font-family: ${theme.fontFamily.heading};
         font-size: 1.6rem;
-        font-weight: 100;
+        font-weight: 900;
         line-height: 3rem;
+        text-transform: uppercase;
         min-width: 120px;
       }
-      
+
       .navigation-button:hover {
         background: ${theme.colors.mainBrand};
         border-radius: 4px;

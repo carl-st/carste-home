@@ -18,9 +18,7 @@ const Admin = () => {
         }
 
         .name-container {
-          background-color: ${theme.colors.mainBrand};
-          flex: 1;
-          padding: 40px;
+          display: none;
         }
 
         .logo-container {
@@ -29,8 +27,19 @@ const Admin = () => {
           margin-right: 30px;
         }
 
+        .logo {
+          height: 100%;
+          width: 100%;
+        }
+
         .cover-image {
-          height: 300px;
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+
+        .cover-image-wide {
+          display: none;
         }
 
         .description {
@@ -38,7 +47,7 @@ const Admin = () => {
         }
 
         .description-container {
-          padding: 40px;
+          padding: 4rem 20%;
           width: 100%;
           color: white;
         }
@@ -54,45 +63,57 @@ const Admin = () => {
           }
 
           .name-container {
+            display: block;
             background-color: transparent;
             flex: 1;
             padding: 40px;
           }
 
           .cover-image {
-            height: auto;
+            display: none;
+          }
+
+          .cover-image-wide {
+            display: block;
+            height: 100%;
             width: 100%;
-          }
-
-          .description {
-            background-color: ${theme.colors.mainBrand};
-          }
-
-          .description-container {
-            max-width: 400px;
           }
         }
       `}</style>
       <section className="banner">
         <div className="cover-container">
           <img
-            className="cover-image"
+            className="cover-image-wide"
             src="/img/keywords-wide.png"
+            alt="podcast-cover"
+          />
+          <img
+            className="cover-image"
+            src="/img/podcast-cover.png"
             alt="podcast-cover"
           />
         </div>
         <div className="name-container">
-          <Logo />
+          <object
+            className="logo"
+            data="/img/podcast-logo.svg"
+            type="image/svg+xml"
+          />
+          {/* <Logo /> */}
         </div>
       </section>
       <section className="description">
         <div className="description-container">
-          Commit, React, Deployment, CI/CD, Fullstack... Branża IT pełna jest
-          trudnych nazw, zapożyczeń oraz skrótów, w których bardzo łatwo się
-          pogubić. Każdy odcinek wyjaśnia kilka z nich. Posłuchaj niezależnie od
-          tego czy Twoja przygoda z programowaniem się zaczyna, masz już trochę
-          doświadczenia, czy może po prostu chcesz zrozumieć o co chodzi tym
-          wszystkim nerdom!
+          <h1>Glosariusz Programisty</h1>
+          <h2>Zrozum żargon koderów</h2>
+          <p>
+            Commit, React, Deployment, CI/CD, Fullstack... Branża IT pełna jest
+            trudnych nazw, zapożyczeń oraz skrótów, w których bardzo łatwo się
+            pogubić. Każdy odcinek wyjaśnia kilka z nich. Posłuchaj niezależnie
+            od tego czy Twoja przygoda z programowaniem się zaczyna, masz już
+            trochę doświadczenia, czy może po prostu chcesz zrozumieć o co
+            chodzi tym wszystkim nerdom!
+          </p>
         </div>
       </section>
     </Layout>
