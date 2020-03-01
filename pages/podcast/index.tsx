@@ -1,12 +1,27 @@
+import Head from 'next/head';
 import Layout from '../../components/Layout';
+import Paragraph from '../../components/Paragraph';
 import theme from '../../styles/theme';
-import Logo from '../../public/img/podcast-logo.svg';
+
+const paragraphContent: JSX.Element = (
+  <>
+    <p>
+      Commit, React, Deployment, CI/CD, Fullstack... Branża IT pełna jest
+      trudnych nazw, zapożyczeń oraz skrótów, w których bardzo łatwo się
+      pogubić. Każdy odcinek wyjaśnia kilka z nich, nawet jeżeli są uważane za
+      podstawowe. Posłuchaj niezależnie od tego czy Twoja przygoda z
+      programowaniem się zaczyna, masz już trochę doświadczenia, czy może po
+      prostu chcesz zrozumieć o co chodzi tym wszystkim nerdom!
+    </p>
+    <p>Podkast wkrótce dostępny na Apple Podcast, Spotify, YouTube oraz Anchor!</p>
+  </>
+);
 
 const Admin = () => {
   return (
     <Layout>
       <style jsx>{`
-        .section {
+        section:not(.banner) {
           padding: 4rem 2rem;
         }
 
@@ -19,11 +34,12 @@ const Admin = () => {
 
         .cover-container {
           flex: 2;
-          overflow: hidden;
         }
 
         .name-container {
           display: none;
+          flex: 1;
+          min-width: 40%;
         }
 
         .logo-container {
@@ -51,25 +67,13 @@ const Admin = () => {
           justify-content: center;
         }
 
-        .description {
-          min-height: 500px;
-        }
-
-        .description-container {
-          width: 100%;
-          color: white;
-          padding: 2rem 4rem;
-        }
-
-        .credits {
-          background-color: ${theme.colors.mainBrand};
-          padding: 2rem 4rem;
-        }
-
         @media (min-width: ${theme.breakpoints.tablet}) {
+          section:not(.banner) {
+            padding: 4rem 20%;
+          }
+
           .banner {
             flex-direction: row;
-            height: calc(100vh - ${theme.sizes.desktopHeaderHeight});
           }
 
           .logo-container {
@@ -78,17 +82,13 @@ const Admin = () => {
           }
 
           .name-container {
-            position: absolute;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             background-color: transparent;
             flex: 1;
-            height: 100%;
-            max-width: 50%;
-            right: 0;
-            padding: 40px;
+            padding: 4rem;
             color: white;
           }
 
@@ -99,13 +99,39 @@ const Admin = () => {
           .cover-image-wide {
             display: block;
             height: 100%;
-          }
-
-          .description-container {
-            padding: 4rem 20%;
+            width: 100%;
           }
         }
       `}</style>
+      <Head>
+        <title>Glosariusz Programisty - zrozum żargon IT</title>
+        <meta
+          name="description"
+          content="Commit, React, Deployment, CI/CD, Fullstack... Branża IT pełna jest
+            trudnych nazw, zapożyczeń oraz skrótów, w których bardzo łatwo się
+            pogubić. Każdy odcinek podkastu wyjaśnia kilka z nich, nawet jeżeli są uważane za podstawowe!"
+        />
+        <meta
+          name="og:title"
+          property="og:title"
+          content="Glosariusz Programisty - zrozum żargon IT"
+        />
+        <meta
+          name="og:description"
+          property="og:description"
+          content="Commit, React, Deployment, CI/CD, Fullstack... Branża IT pełna jest
+            trudnych nazw, zapożyczeń oraz skrótów, w których bardzo łatwo się
+            pogubić. Każdy odcinek podkastu wyjaśnia kilka z nich, nawet jeżeli są uważane za podstawowe!"
+        />
+        <meta name="og:locale" property="og:locale" content="pl" />
+        <meta
+          name="og:image"
+          property="og:image"
+          content="./assets/img/logo.svg"
+        />
+        <meta name="og:type" property="og:type" content="website" />
+        <meta name="robots" content="index, follow" />
+      </Head>
       <section className="banner">
         <div className="cover-container">
           <img
@@ -131,26 +157,11 @@ const Admin = () => {
         </div>
       </section>
       <section className="description">
-        <div className="description-container">
-          <h1>Glosariusz Programisty</h1>
-          <h2>Zrozum żargon koderów</h2>
-          <p>
-            Commit, React, Deployment, CI/CD, Fullstack... Branża IT pełna jest
-            trudnych nazw, zapożyczeń oraz skrótów, w których bardzo łatwo się
-            pogubić. Każdy odcinek wyjaśnia kilka z nich. Posłuchaj niezależnie
-            od tego czy Twoja przygoda z programowaniem się zaczyna, masz już
-            trochę doświadczenia, czy może po prostu chcesz zrozumieć o co
-            chodzi tym wszystkim nerdom!
-          </p>
-        </div>
-      </section>
-      <section className="credits">
-        <p>
-          Music by DJ Quads
-          <br /><a href="https://soundcloud.com/aka-dj-quads">Soundcloud</a>
-          <br />Font Kielo and Planck by Mikko Nuttila
-          <br /><a href="https://mikkonuuttila.com">Website</a>
-        </p>
+        <Paragraph
+          title="Glosariusz Programisty"
+          lead="Zrozum żargon IT"
+          content={paragraphContent}
+        />
       </section>
     </Layout>
   );

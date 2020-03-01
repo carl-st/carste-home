@@ -1,8 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import theme from '../styles/theme';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Header: React.FunctionComponent = () => (
   <>

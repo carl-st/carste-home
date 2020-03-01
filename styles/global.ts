@@ -31,8 +31,6 @@ export default css.global`
     background-position: center;
     font-family: ${theme.fontFamily.paragraph};
     margin: 0;
-    height: 100vh;
-    width: 100vw;
   }
 
   h1 {
@@ -55,6 +53,10 @@ export default css.global`
     font-family: ${theme.fontFamily.paragraph};
     font-size: 1rem;
     font-weight: 300;
+  }
+
+  a {
+    color: white;
   }
 
   @media (min-width: ${theme.breakpoints.tablet}) {

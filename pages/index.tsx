@@ -1,13 +1,25 @@
+import Head from 'next/head';
 import Layout from '../components/Layout';
 import ShareBar from '../components/ShareBar';
+import Paragraph from '../components/Paragraph';
 import theme from '../styles/theme';
+
+const paragraphContent: JSX.Element = (
+  <>
+    <p>
+      Programista Web i iOS. Obecnie ponad 4 lata profesjonalnego doświadczenia.
+      Praca zarówno z klientami zagranicznymi jak i lokalnymi.
+    </p>
+    <p>W wolnym czasie fan Playstation i Nintendo Switcha.</p>
+    <p>Czy wiesz już o moim podkaście?</p>
+  </>
+);
 
 const Index = () => (
   <Layout>
     <style jsx>{`
       section {
         display: flex;
-        justify-content: center;
         flex-direction: column;
         position: relative;
         padding: 4rem 2rem;
@@ -16,6 +28,7 @@ const Index = () => (
 
       section.banner {
         color: ${theme.colors.mainBrand};
+        justify-content: center;
         background-image: url('/img/background.jpg');
         background-position: center;
         background-size: cover;
@@ -28,7 +41,7 @@ const Index = () => (
       }
 
       .text-container {
-        flex: 2;
+        flex: 1;
         margin-top: 2rem;
         text-align: center;
       }
@@ -54,12 +67,45 @@ const Index = () => (
         }
 
         .text-container {
-          flex: 2;
-          margin: 0 0 0 4rem;
           text-align: left;
+        }
+
+        .image-container {
+          display: flex;
+          justify-content: flex-end;
+        }
+
+        .profile-image {
+          margin: 0 4rem;
+          max-width: 400px;
         }
       }
     `}</style>
+    <Head>
+      <title>Karol Stępień - Senior Fullstack Engineer</title>
+      <meta
+        name="description"
+        content="Programista Web i iOS. JavaScript, React, Redux, Node.js, Front-End, Back-End."
+      />
+      <meta
+        name="og:title"
+        property="og:title"
+        content="Glosariusz Programisty - zrozum żargon IT"
+      />
+      <meta
+        name="og:description"
+        property="og:description"
+        content="Programista Web i iOS. JavaScript, React, Redux, Node.js, Front-End, Back-End."
+      />
+      <meta name="og:locale" property="og:locale" content="pl" />
+      <meta
+        name="og:image"
+        property="og:image"
+        content="./assets/img/logo.svg"
+      />
+      <meta name="og:type" property="og:type" content="website" />
+      <meta name="robots" content="index, follow" />
+    </Head>
     <section className="banner">
       <div className="image-container">
         <img className="profile-image" src="/img/profilepic.jpg" />
@@ -69,6 +115,13 @@ const Index = () => (
         <h2>Senior Fullstack Engineer</h2>
         <ShareBar />
       </div>
+    </section>
+    <section>
+      <Paragraph
+        title="O mnie"
+        lead="Czym się zajmuję?"
+        content={paragraphContent}
+      />
     </section>
   </Layout>
 );
