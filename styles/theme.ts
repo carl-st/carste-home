@@ -24,7 +24,8 @@ const theme = {
     danger: '#F44336',
   },
   sizes: {
-    headerHeight: '68px'
+    desktopHeaderHeight: '78px',
+    mobileHeaderHeight: '107px'
   }
 };
 

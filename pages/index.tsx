@@ -19,7 +19,7 @@ const Index = () => (
         background-image: url('/img/background.jpg');
         background-position: center;
         background-size: cover;
-        height: calc(100vh - ${theme.sizes.headerHeight});
+        height: calc(100vh - ${theme.sizes.mobileHeaderHeight});
         align-items: center;
       }
 
@@ -47,6 +47,10 @@ const Index = () => (
         section {
           flex-direction: row;
           padding: 0 20% 2rem;
+        }
+
+        section.banner {
+          height: calc(100vh - ${theme.sizes.desktopHeaderHeight});
         }
 
         .text-container {

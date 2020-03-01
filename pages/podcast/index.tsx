@@ -6,6 +6,10 @@ const Admin = () => {
   return (
     <Layout>
       <style jsx>{`
+        .section {
+          padding: 4rem 2rem;
+        }
+
         .banner {
           background-color: black;
           display: flex;
@@ -54,13 +58,18 @@ const Admin = () => {
         .description-container {
           width: 100%;
           color: white;
-          padding: 2rem;
+          padding: 2rem 4rem;
+        }
+
+        .credits {
+          background-color: ${theme.colors.mainBrand};
+          padding: 2rem 4rem;
         }
 
         @media (min-width: ${theme.breakpoints.tablet}) {
           .banner {
             flex-direction: row;
-            height: calc(100vh - ${theme.sizes.headerHeight});
+            height: calc(100vh - ${theme.sizes.desktopHeaderHeight});
           }
 
           .logo-container {
@@ -88,7 +97,7 @@ const Admin = () => {
           }
 
           .cover-image-wide {
-            display: block; 
+            display: block;
             height: 100%;
           }
 
@@ -117,9 +126,7 @@ const Admin = () => {
             type="image/svg+xml"
           />
           <div className="players">
-            <p>Spotify</p>
-            <p>Podcasts</p>
-            <p>YouTube</p>
+            <p>Wkrótce dostępny!</p>
           </div>
         </div>
       </section>
@@ -136,6 +143,14 @@ const Admin = () => {
             chodzi tym wszystkim nerdom!
           </p>
         </div>
+      </section>
+      <section className="credits">
+        <p>
+          Music by DJ Quads
+          <br /><a href="https://soundcloud.com/aka-dj-quads">Soundcloud</a>
+          <br />Font Kielo and Planck by Mikko Nuttila
+          <br /><a href="https://mikkonuuttila.com">Website</a>
+        </p>
       </section>
     </Layout>
   );
