@@ -108,7 +108,9 @@ const Index = () => (
     </Head>
     <section className="banner">
       <div className="image-container">
-        <img className="profile-image" src="/img/profilepic.jpg" />
+        <div>
+          <img className="profile-image" src="/img/profilepic.jpg" />
+        </div>
       </div>
       <div className="text-container">
         <h1>Karol Stępień</h1>
