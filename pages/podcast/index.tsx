@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Layout from '../../components/Layout';
 import Paragraph from '../../components/Paragraph';
 import theme from '../../styles/theme';
+import PlayersBar from '../../components/PlayersBar';
 
 const paragraphContent: JSX.Element = (
   <>
@@ -13,7 +14,7 @@ const paragraphContent: JSX.Element = (
       programowaniem się zaczyna, masz już trochę doświadczenia, czy może po
       prostu chcesz zrozumieć o co chodzi tym wszystkim nerdom!
     </p>
-    <p>Podkast wkrótce dostępny na Apple Podcast, Spotify, YouTube oraz Anchor!</p>
+    <p>Juź dostępny!</p>
   </>
 );
 
@@ -67,6 +68,11 @@ const Admin = () => {
           justify-content: center;
         }
 
+        .mobile-players-container {
+          display: flex;
+          justify-content: center;
+        }
+
         @media (min-width: ${theme.breakpoints.tablet}) {
           section:not(.banner) {
             padding: 4rem 20%;
@@ -100,6 +106,10 @@ const Admin = () => {
             display: block;
             height: 100%;
             width: 100%;
+          }
+
+          .mobile-players-container {
+            display: none;
           }
         }
       `}</style>
@@ -152,7 +162,7 @@ const Admin = () => {
             type="image/svg+xml"
           />
           <div className="players">
-            <p>Wkrótce dostępny!</p>
+            <PlayersBar />
           </div>
         </div>
       </section>
@@ -162,6 +172,17 @@ const Admin = () => {
           lead="Zrozum żargon IT"
           content={paragraphContent}
         />
+        <div className="mobile-players-container">
+          <PlayersBar />
+        </div>
+      </section>
+      <section>
+        <iframe
+          src="https://anchor.fm/glosariusz-programisty/embed/episodes/Endy-na-Start---o-mnie-sowami-deva-eb7p3n"
+          height="102px"
+          width="400px"
+          scrolling="no"
+        ></iframe>
       </section>
     </Layout>
   );

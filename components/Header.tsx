@@ -39,7 +39,6 @@ const Header: React.FunctionComponent = () => (
         display: flex;
         flex: 1;
         justify-content: flex-end;
-        max-width: 400px;
         text-align: center;
       }
 
@@ -86,6 +85,10 @@ const Header: React.FunctionComponent = () => (
         .navigation {
           flex-direction: row;
           height: ${theme.sizes.desktopHeaderHeight};
+        }
+
+        .navigation-buttons {
+          max-width: 400px;
         }
 
         .navigation-button {

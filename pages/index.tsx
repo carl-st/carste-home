@@ -36,12 +36,7 @@ const Index = () => (
         align-items: center;
       }
 
-      .image-container {
-        flex: 1;
-      }
-
       .text-container {
-        flex: 1;
         margin-top: 2rem;
         text-align: center;
       }
@@ -52,6 +47,7 @@ const Index = () => (
 
       .profile-image {
         max-width: 200px;
+        max-height: 200px;
         border-radius: 50%;
         border: 8px solid ${theme.colors.mainBrand};
       }
@@ -66,7 +62,12 @@ const Index = () => (
           min-height: calc(100vh - ${theme.sizes.desktopHeaderHeight});
         }
 
+        .image-container {
+          flex: 1;
+        }
+
         .text-container {
+          flex: 1;
           text-align: left;
         }
 
@@ -84,6 +85,7 @@ const Index = () => (
       @media (min-width: ${theme.breakpoints.desktop}) {
         .profile-image {
           max-width: 400px;
+          max-height: 400px;
         }
       }
     `}</style>
@@ -96,7 +98,7 @@ const Index = () => (
       <meta
         name="og:title"
         property="og:title"
-        content="Glosariusz Programisty - zrozum żargon IT"
+        content="Karol Stępień - Senior Fullstack Engineer"
       />
       <meta
         name="og:description"
