@@ -32,7 +32,7 @@ const Index = () => (
         background-image: url('/img/background.jpg');
         background-position: center;
         background-size: cover;
-        height: calc(100vh - ${theme.sizes.mobileHeaderHeight});
+        min-height: calc(100vh - ${theme.sizes.mobileHeaderHeight});
         align-items: center;
       }
 
@@ -63,7 +63,7 @@ const Index = () => (
         }
 
         section.banner {
-          height: calc(100vh - ${theme.sizes.desktopHeaderHeight});
+          min-height: calc(100vh - ${theme.sizes.desktopHeaderHeight});
         }
 
         .text-container {
@@ -76,7 +76,13 @@ const Index = () => (
         }
 
         .profile-image {
-          margin: 0 4rem;
+          margin: 1rem 4rem;
+          max-width: 300px;
+        }
+      }
+
+      @media (min-width: ${theme.breakpoints.desktop}) {
+        .profile-image {
           max-width: 400px;
         }
       }
