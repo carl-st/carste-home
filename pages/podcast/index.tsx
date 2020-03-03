@@ -23,7 +23,7 @@ const Admin = () => {
     <Layout>
       <style jsx>{`
         section:not(.banner) {
-          padding: 4rem 2rem;
+          padding: 0 2rem 4rem;
         }
 
         .banner {
@@ -75,7 +75,7 @@ const Admin = () => {
 
         @media (min-width: ${theme.breakpoints.tablet}) {
           section:not(.banner) {
-            padding: 4rem 20%;
+            padding: 0 20% 4rem;
           }
 
           .banner {
@@ -180,7 +180,6 @@ const Admin = () => {
         <iframe
           src="https://anchor.fm/glosariusz-programisty/embed/episodes/Endy-na-Start---o-mnie-sowami-deva-eb7p3n"
           height="102px"
-          width="400px"
           scrolling="no"
         ></iframe>
       </section>

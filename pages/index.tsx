@@ -22,7 +22,7 @@ const Index = () => (
         display: flex;
         flex-direction: column;
         position: relative;
-        padding: 4rem 2rem;
+        padding: 0 2rem 4rem;
         align-items: center;
       }
 
@@ -55,7 +55,7 @@ const Index = () => (
       @media (min-width: ${theme.breakpoints.tablet}) {
         section {
           flex-direction: row;
-          padding: 0 20% 2rem;
+          padding: 0 20% 4rem;
         }
 
         section.banner {
