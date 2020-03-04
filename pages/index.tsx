@@ -100,7 +100,7 @@ const Index = () => (
         description: 'Programista Web i iOS. JavaScript, React, Redux, Node.js, Front-End, Back-End.',
         images: [
           {
-            url: '/img/profilepic.jpg',
+            url: 'https://carste.pl/img/profilepic.jpg',
             width: 500,
             height: 500,
             alt: 'Profile picture',
@@ -117,7 +117,7 @@ const Index = () => (
     <section className="banner">
       <div className="image-container">
         <div>
-          <img className="profile-image" src="https://carste.pl/img/profilepic.jpg" />
+          <img className="profile-image" src="/img/profilepic.jpg" />
         </div>
       </div>
       <div className="text-container">
