@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Layout from '../../components/Layout';
 import Paragraph from '../../components/Paragraph';
 import PlayersBar from '../../components/PlayersBar';
@@ -123,13 +122,12 @@ const Admin = () => {
         openGraph={{
           url: 'https://carste.pl/podcast',
           title: 'Glosariusz Programisty - zrozum żargon IT',
-          description:
-            `Commit, React, Deployment, CI/CD, Fullstack... Branża IT pełna jest
+          description: `Commit, React, Deployment, CI/CD, Fullstack... Branża IT pełna jest
             trudnych nazw, zapożyczeń oraz skrótów, w których bardzo łatwo się
             pogubić. Każdy odcinek podkastu wyjaśnia kilka z nich, nawet jeżeli są uważane za podstawowe!`,
           images: [
             {
-              url: '/img/podcast-cover.png',
+              url: 'https://carste.pl/img/podcast-cover.png',
               alt: 'Profile picture',
             },
           ],
@@ -160,9 +158,7 @@ const Admin = () => {
             data="/img/podcast-logo.svg"
             type="image/svg+xml"
           />
-          <div className="players">
-            <PlayersBar />
-          </div>
+          <PlayersBar />
         </div>
       </section>
       <section className="description">

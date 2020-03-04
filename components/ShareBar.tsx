@@ -26,9 +26,9 @@ const ShareBar: React.FunctionComponent = () => (
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 40px;
-        width: 40px;
-        max-width: 40px;
+        height: 50px;
+        width: 50px;
+        max-width: 50px;
         margin-right: 5px;
         transition: border-color 0.2s linear;
       }
@@ -38,12 +38,11 @@ const ShareBar: React.FunctionComponent = () => (
       }
 
       .fontawesome {
-        color: ${theme.colors.lightShades};
         cursor: pointer;
-        font-size: 1rem;
+        font-size: 1.5rem;
         text-align: center;
         line-height: 100%;
-        align-items: center;
+        align-items: center; 
       }
 
       @media (min-width: ${theme.breakpoints.tablet}) {
@@ -53,14 +52,7 @@ const ShareBar: React.FunctionComponent = () => (
         }
 
         .social a {
-          width: 50px;
-          max-width: 50px;
-          height: 50px;
           margin-right: 10px;
-        }
-
-        .fontawesome {
-          font-size: 1.5rem;
         }
       }
     `}</style>
@@ -70,7 +62,7 @@ const ShareBar: React.FunctionComponent = () => (
         className="fontawesome"
         href="mailto:karol.stepien@me.com"
       >
-        <FontAwesomeIcon icon={faEnvelope} />
+        <FontAwesomeIcon icon={faEnvelope} size="1x"/>
       </a>
       <a
         aria-label="LinkedIn"

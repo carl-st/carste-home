@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faYoutube,
   faSpotify,
-//   faApple,
+  //   faApple,
 } from '@fortawesome/free-brands-svg-icons';
-import AnchorLogo from '../public/img/anchor-icon.svg'
+import AnchorLogo from '../public/img/anchor-icon.svg';
 import theme from '../styles/theme';
 
 const PlayersBar: React.FunctionComponent = () => (
@@ -26,9 +26,9 @@ const PlayersBar: React.FunctionComponent = () => (
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 40px;
-        width: 40px;
-        max-width: 40px;
+        height: 50px;
+        width: 50px;
+        max-width: 50px;
         margin-right: 5px;
         transition: border-color 0.2s linear;
       }
@@ -40,7 +40,7 @@ const PlayersBar: React.FunctionComponent = () => (
       .fontawesome {
         color: ${theme.colors.lightShades};
         cursor: pointer;
-        font-size: 1rem;
+        font-size: 1.5rem;
         text-align: center;
         line-height: 100%;
         align-items: center;
@@ -53,14 +53,7 @@ const PlayersBar: React.FunctionComponent = () => (
         }
 
         .social a {
-          width: 50px;
-          max-width: 50px;
-          height: 50px;
           margin-right: 10px;
-        }
-
-        .fontawesome {
-          font-size: 1.5rem;
         }
       }
     `}</style>
@@ -72,7 +65,11 @@ const PlayersBar: React.FunctionComponent = () => (
       >
         <FontAwesomeIcon icon={faYoutube} />
       </a>
-      <a aria-label="Spotify" className="fontawesome" href="https://open.spotify.com/show/5urLIj00kswGMp4FdABVWg">
+      <a
+        aria-label="Spotify"
+        className="fontawesome"
+        href="https://open.spotify.com/show/5urLIj00kswGMp4FdABVWg"
+      >
         <FontAwesomeIcon icon={faSpotify} />
       </a>
       {/* <a aria-label="Apple Podcast" className="fontawesome" href="">

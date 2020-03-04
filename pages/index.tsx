@@ -49,6 +49,7 @@ const Index = () => (
         max-width: 200px;
         max-height: 200px;
         border-radius: 50%;
+        margin: 1rem;
         border: 8px solid ${theme.colors.mainBrand};
       }
 
@@ -116,7 +117,7 @@ const Index = () => (
     <section className="banner">
       <div className="image-container">
         <div>
-          <img className="profile-image" src="/img/profilepic.jpg" />
+          <img className="profile-image" src="https://carste.pl/img/profilepic.jpg" />
         </div>
       </div>
       <div className="text-container">
