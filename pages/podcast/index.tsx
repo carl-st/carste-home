@@ -127,7 +127,7 @@ const Admin = () => {
             pogubić. Każdy odcinek podkastu wyjaśnia kilka z nich, nawet jeżeli są uważane za podstawowe!`,
           images: [
             {
-              url: 'https://carste.pl/img/podcast-cover.png',
+              url: 'https://carste.pl/img/podcast-banner.png',
               alt: 'Profile picture',
             },
           ],
