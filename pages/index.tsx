@@ -1,7 +1,7 @@
-import Head from 'next/head';
 import Layout from '../components/Layout';
 import ShareBar from '../components/ShareBar';
 import Paragraph from '../components/Paragraph';
+import { NextSeo } from 'next-seo';
 import theme from '../styles/theme';
 
 const paragraphContent: JSX.Element = (
@@ -89,31 +89,30 @@ const Index = () => (
         }
       }
     `}</style>
-    <Head>
-      <title>Karol Stępień - Senior Fullstack Engineer</title>
-      <meta
-        name="description"
-        content="Programista Web i iOS. JavaScript, React, Redux, Node.js, Front-End, Back-End."
-      />
-      <meta
-        name="og:title"
-        property="og:title"
-        content="Karol Stępień - Senior Fullstack Engineer"
-      />
-      <meta
-        name="og:description"
-        property="og:description"
-        content="Programista Web i iOS. JavaScript, React, Redux, Node.js, Front-End, Back-End."
-      />
-      <meta name="og:locale" property="og:locale" content="pl" />
-      <meta
-        name="og:image"
-        property="og:image"
-        content="/img/profilepic.jpg"
-      />
-      <meta name="og:type" property="og:type" content="website" />
-      <meta name="robots" content="index, follow" />
-    </Head>
+    <NextSeo
+      title="Karol Stępień - Senior Fullstack Engineer"
+      description="Programista Web i iOS. JavaScript, React, Redux, Node.js, Front-End, Back-End."
+      canonical="https://carste.pl/"
+      openGraph={{
+        url: 'https://carste.pl/',
+        title: 'Karol Stępień - Senior Fullstack Engineer',
+        description: 'Programista Web i iOS. JavaScript, React, Redux, Node.js, Front-End, Back-End.',
+        images: [
+          {
+            url: '/img/profilepic.jpg',
+            width: 500,
+            height: 500,
+            alt: 'Profile picture',
+          }
+        ],
+        site_name: 'O mnie',
+      }}
+      twitter={{
+        handle: '@handle',
+        site: '@site',
+        cardType: 'summary_large_image',
+      }}
+    />
     <section className="banner">
       <div className="image-container">
         <div>

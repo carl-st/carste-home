@@ -1,8 +1,9 @@
 import Head from 'next/head';
 import Layout from '../../components/Layout';
 import Paragraph from '../../components/Paragraph';
-import theme from '../../styles/theme';
 import PlayersBar from '../../components/PlayersBar';
+import { NextSeo } from 'next-seo';
+import theme from '../../styles/theme';
 
 const paragraphContent: JSX.Element = (
   <>
@@ -113,35 +114,33 @@ const Admin = () => {
           }
         }
       `}</style>
-      <Head>
-        <title>Glosariusz Programisty - zrozum żargon IT</title>
-        <meta
-          name="description"
-          content="Commit, React, Deployment, CI/CD, Fullstack... Branża IT pełna jest
+      <NextSeo
+        title="Glosariusz Programisty - zrozum żargon IT"
+        description="Commit, React, Deployment, CI/CD, Fullstack... Branża IT pełna jest
+        trudnych nazw, zapożyczeń oraz skrótów, w których bardzo łatwo się
+        pogubić. Każdy odcinek podkastu wyjaśnia kilka z nich, nawet jeżeli są uważane za podstawowe!"
+        canonical="https://carste.pl/"
+        openGraph={{
+          url: 'https://carste.pl/podcast',
+          title: 'Glosariusz Programisty - zrozum żargon IT',
+          description:
+            `Commit, React, Deployment, CI/CD, Fullstack... Branża IT pełna jest
             trudnych nazw, zapożyczeń oraz skrótów, w których bardzo łatwo się
-            pogubić. Każdy odcinek podkastu wyjaśnia kilka z nich, nawet jeżeli są uważane za podstawowe!"
-        />
-        <meta
-          name="og:title"
-          property="og:title"
-          content="Glosariusz Programisty - zrozum żargon IT"
-        />
-        <meta
-          name="og:description"
-          property="og:description"
-          content="Commit, React, Deployment, CI/CD, Fullstack... Branża IT pełna jest
-            trudnych nazw, zapożyczeń oraz skrótów, w których bardzo łatwo się
-            pogubić. Każdy odcinek podkastu wyjaśnia kilka z nich, nawet jeżeli są uważane za podstawowe!"
-        />
-        <meta name="og:locale" property="og:locale" content="pl" />
-        <meta
-          name="og:image"
-          property="og:image"
-          content="/img/podcast-cover.png"
-        />
-        <meta name="og:type" property="og:type" content="website" />
-        <meta name="robots" content="index, follow" />
-      </Head>
+            pogubić. Każdy odcinek podkastu wyjaśnia kilka z nich, nawet jeżeli są uważane za podstawowe!`,
+          images: [
+            {
+              url: '/img/podcast-cover.png',
+              alt: 'Profile picture',
+            },
+          ],
+          site_name: 'Podkast',
+        }}
+        twitter={{
+          handle: '@handle',
+          site: '@site',
+          cardType: 'summary_large_image',
+        }}
+      />
       <section className="banner">
         <div className="cover-container">
           <img
