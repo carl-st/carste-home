@@ -1,7 +1,7 @@
-import React from 'react'
-import App from 'next/app'
-import Router from "next/router";
-import withGA from "next-ga";
+import React from 'react';
+import App from 'next/app';
+import Router from 'next/router';
+import withGA from 'next-ga';
 
 class Carste extends App {
   // Only uncomment this method if you have blocking data requirements for
@@ -17,9 +17,9 @@ class Carste extends App {
   // }
 
   render() {
-    const { Component, pageProps } = this.props
-    return <Component {...pageProps} />
+    const { Component, pageProps } = this.props;
+    return <Component {...pageProps} />;
   }
 }
 
-export default withGA("UA-159498003-1", Router)(Carste);
+export default withGA('UA-159498003-1', Router)(Carste);

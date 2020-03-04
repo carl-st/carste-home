@@ -137,7 +137,7 @@ const Admin = () => {
         <meta
           name="og:image"
           property="og:image"
-          content="./assets/img/logo.svg"
+          content="/img/podcast-cover.png"
         />
         <meta name="og:type" property="og:type" content="website" />
         <meta name="robots" content="index, follow" />

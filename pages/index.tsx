@@ -109,7 +109,7 @@ const Index = () => (
       <meta
         name="og:image"
         property="og:image"
-        content="./assets/img/logo.svg"
+        content="/img/profilepic.jpg"
       />
       <meta name="og:type" property="og:type" content="website" />
       <meta name="robots" content="index, follow" />
