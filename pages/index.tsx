@@ -8,9 +8,10 @@ const paragraphContent: JSX.Element = (
   <>
     <p>
       Programista Web i iOS. Obecnie ponad 4 lata profesjonalnego doświadczenia.
-      Praca zarówno z klientami zagranicznymi jak i lokalnymi.
+      Głównie wykorzystywane przeze mnie technologie webowe to obecnie React, Next.js, Node.js, Nest.js, GraphQL, TypeScript.
+      Pracuję zarówno z klientami zagranicznymi jak i lokalnymi.
     </p>
-    <p>W wolnym czasie fan Playstation i Nintendo Switcha.</p>
+    <p>W wolnym czasie fan gier na Playstation i Nintendo Switch'a.</p>
     <p>Czy wiesz już o moim podkaście?</p>
   </>
 );

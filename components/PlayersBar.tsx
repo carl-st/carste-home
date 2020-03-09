@@ -3,7 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faYoutube,
   faSpotify,
-  //   faApple,
+  faApple,
+  faGoogle,
 } from '@fortawesome/free-brands-svg-icons';
 import AnchorLogo from '../public/img/anchor-icon.svg';
 import theme from '../styles/theme';
@@ -44,6 +45,7 @@ const PlayersBar: React.FunctionComponent = () => (
         text-align: center;
         line-height: 100%;
         align-items: center;
+        display: flex;
       }
 
       @media (min-width: ${theme.breakpoints.tablet}) {
@@ -72,9 +74,20 @@ const PlayersBar: React.FunctionComponent = () => (
       >
         <FontAwesomeIcon icon={faSpotify} />
       </a>
-      {/* <a aria-label="Apple Podcast" className="fontawesome" href="">
+      <a
+        aria-label="Apple Podcast"
+        className="fontawesome"
+        href="https://podcasts.apple.com/pl/podcast/glosariusz-programisty/id1501417936?l"
+      >
         <FontAwesomeIcon icon={faApple} />
-      </a> */}
+      </a>
+      <a
+        aria-label="Google Podcast"
+        className="fontawesome"
+        href="https://www.google.com/podcasts?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy8xNDFiYzYxNC9wb2RjYXN0L3Jzcw=="
+      >
+        <FontAwesomeIcon icon={faGoogle} />
+      </a>
       <a
         aria-label="Anchor"
         className="fontawesome"

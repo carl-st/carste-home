@@ -43,6 +43,10 @@ const Admin = () => {
           min-width: 40%;
         }
 
+        .name-container span {
+          margin: 20px;
+        }
+
         .logo-container {
           min-width: 90px;
           width: 90px;
@@ -128,7 +132,7 @@ const Admin = () => {
           images: [
             {
               url: 'https://carste.pl/img/podcast-banner.png',
-              alt: 'Profile picture',
+              alt: 'Podcast banner',
             },
           ],
           site_name: 'Podkast',
@@ -158,6 +162,7 @@ const Admin = () => {
             data="/img/podcast-logo.svg"
             type="image/svg+xml"
           />
+          <span>Posłuchaj na:</span>
           <PlayersBar />
         </div>
       </section>

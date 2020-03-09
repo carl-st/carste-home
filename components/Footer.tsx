@@ -21,7 +21,7 @@ const Footer: React.FunctionComponent = () => (
     `}</style>
     <footer className="container">
       <p>
-        <span>Font Kielo and Planck by Mikko Nuttila</span>
+        <span>Fonts Kielo and Planck by Mikko Nuuttila</span>
         <a href="https://mikkonuuttila.com">Website</a>
       </p>
       <p>
