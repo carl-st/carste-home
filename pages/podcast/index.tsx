@@ -77,6 +77,15 @@ const Admin = () => {
           justify-content: center;
         }
 
+        .anchor-players {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .anchor {
+          margin: 10px 0;
+        }
+
         @media (min-width: ${theme.breakpoints.tablet}) {
           section:not(.banner) {
             padding: 0 20% 4rem;
@@ -114,6 +123,14 @@ const Admin = () => {
 
           .mobile-players-container {
             display: none;
+          }
+
+          .anchor-players {
+            display: block;
+          }
+
+          .anchor {
+            margin: 10px 20px 10px 0;
           }
         }
       `}</style>
@@ -176,9 +193,16 @@ const Admin = () => {
           <PlayersBar />
         </div>
       </section>
-      <section>
+      <section className="anchor-players">
         <iframe
+          className="anchor"
           src="https://anchor.fm/glosariusz-programisty/embed/episodes/Endy-na-Start---o-mnie-sowami-deva-eb7p3n"
+          height="102px"
+          scrolling="no"
+        ></iframe>
+        <iframe
+          className="anchor"
+          src="https://anchor.fm/glosariusz-programisty/embed/episodes/Jak-by-git---Pusze--brancze-i-inne-merde-ebi4o9"
           height="102px"
           scrolling="no"
         ></iframe>
