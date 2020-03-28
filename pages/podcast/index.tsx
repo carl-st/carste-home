@@ -77,12 +77,14 @@ const Admin = () => {
           justify-content: center;
         }
 
-        .anchor-players {
+        .youtube-players {
           display: flex;
+          justify-content: center;
+          align-items: center;
           flex-direction: column;
         }
 
-        .anchor {
+        .youtube {
           margin: 10px 0;
         }
 
@@ -125,11 +127,11 @@ const Admin = () => {
             display: none;
           }
 
-          .anchor-players {
+          .youtube-players {
             display: block;
           }
 
-          .anchor {
+          .youtube {
             margin: 10px 20px 10px 0;
           }
         }
@@ -179,7 +181,7 @@ const Admin = () => {
             data="/img/podcast-logo.svg"
             type="image/svg+xml"
           />
-          <span>Posłuchaj na:</span>
+          <span>Posłuchaj:</span>
           <PlayersBar />
         </div>
       </section>
@@ -193,18 +195,27 @@ const Admin = () => {
           <PlayersBar />
         </div>
       </section>
-      <section className="anchor-players">
+      <section className="youtube-players">
         <iframe
-          className="anchor"
-          src="https://anchor.fm/glosariusz-programisty/embed/episodes/Endy-na-Start---o-mnie-sowami-deva-eb7p3n"
-          height="102px"
-          scrolling="no"
+          className="youtube"
+          width="300"
+          src="https://www.youtube.com/embed/fL2EdWlXlZg"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          frameBorder="0"
         ></iframe>
         <iframe
-          className="anchor"
-          src="https://anchor.fm/glosariusz-programisty/embed/episodes/Jak-by-git---Pusze--brancze-i-inne-merde-ebi4o9"
-          height="102px"
-          scrolling="no"
+          className="youtube"
+          width="300"
+          src="https://www.youtube.com/embed/GXyxQrxvm9w"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          frameBorder="0"
+        ></iframe>
+        <iframe
+          className="youtube"
+          width="300"
+          src="https://www.youtube.com/embed/ak7qIGLwjkg"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          frameBorder="0"
         ></iframe>
       </section>
     </Layout>
