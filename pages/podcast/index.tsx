@@ -217,6 +217,13 @@ const Admin = () => {
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           frameBorder="0"
         ></iframe>
+        <iframe
+          className="youtube"
+          width="300"
+          src="https://www.youtube.com/embed/8ExZxu3yiTE"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          frameBorder="0"
+        ></iframe>
       </section>
     </Layout>
   );
