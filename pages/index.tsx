@@ -1,6 +1,6 @@
-import Layout from '../components/Layout';
-import ShareBar from '../components/ShareBar';
-import Paragraph from '../components/Paragraph';
+import Layout from '../components/Layout/Layout';
+import ShareBar from '../components/ShareBar/ShareBar';
+import Paragraph from '../components/Paragraph/Paragraph';
 import { NextSeo } from 'next-seo';
 import theme from '../styles/theme';
 

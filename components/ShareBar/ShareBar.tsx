@@ -1,15 +1,14 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import {
-  faYoutube,
-  faSpotify,
-  faApple,
-  faGoogle,
+  faTwitter,
+  faGithub,
+  faLinkedinIn,
 } from '@fortawesome/free-brands-svg-icons';
-import AnchorLogo from '../public/img/anchor-icon.svg';
-import theme from '../styles/theme';
+import theme from '../../styles/theme';
 
-const PlayersBar: React.FunctionComponent = () => (
+const ShareBar: React.FunctionComponent = () => (
   <>
     <style jsx>{`
       .social {
@@ -19,8 +18,8 @@ const PlayersBar: React.FunctionComponent = () => (
       }
 
       .social a {
-        background-color: transparent;
-        border: 2px solid white;
+        background-color: ${theme.colors.lightAccent};
+        border: 2px solid ${theme.colors.lightAccent};
         border-radius: 50%;
         text-decoration: none;
         flex: 1;
@@ -39,13 +38,11 @@ const PlayersBar: React.FunctionComponent = () => (
       }
 
       .fontawesome {
-        color: ${theme.colors.lightShades};
         cursor: pointer;
         font-size: 1.5rem;
         text-align: center;
         line-height: 100%;
-        align-items: center;
-        display: flex;
+        align-items: center; 
       }
 
       @media (min-width: ${theme.breakpoints.tablet}) {
@@ -61,42 +58,35 @@ const PlayersBar: React.FunctionComponent = () => (
     `}</style>
     <div className="social">
       <a
-        aria-label="YouTube"
+        aria-label="E-Mail"
         className="fontawesome"
-        href="https://www.youtube.com/channel/UCy0fgqSaFsckMDxX5Ulamsg"
+        href="mailto:karol.stepien@me.com"
       >
-        <FontAwesomeIcon icon={faYoutube} />
+        <FontAwesomeIcon icon={faEnvelope} size="1x"/>
       </a>
       <a
-        aria-label="Spotify"
+        aria-label="LinkedIn"
         className="fontawesome"
-        href="https://open.spotify.com/show/5urLIj00kswGMp4FdABVWg"
+        href="https://www.linkedin.com/in/carl-st/"
       >
-        <FontAwesomeIcon icon={faSpotify} />
+        <FontAwesomeIcon icon={faLinkedinIn} />
       </a>
       <a
-        aria-label="Apple Podcast"
+        aria-label="GitHub"
         className="fontawesome"
-        href="https://podcasts.apple.com/pl/podcast/glosariusz-programisty/id1501417936?l"
+        href="https://github.com/carl-st"
       >
-        <FontAwesomeIcon icon={faApple} />
+        <FontAwesomeIcon icon={faGithub} />
       </a>
       <a
-        aria-label="Google Podcast"
+        aria-label="Twitter"
         className="fontawesome"
-        href="https://www.google.com/podcasts?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy8xNDFiYzYxNC9wb2RjYXN0L3Jzcw=="
+        href="https://twitter.com/karlos_stepien"
       >
-        <FontAwesomeIcon icon={faGoogle} />
-      </a>
-      <a
-        aria-label="Anchor"
-        className="fontawesome"
-        href="https://anchor.fm/glosariusz-programisty"
-      >
-        <AnchorLogo />
+        <FontAwesomeIcon icon={faTwitter} />
       </a>
     </div>
   </>
 );
 
-export default PlayersBar;
+export default ShareBar;

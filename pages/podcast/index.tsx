@@ -1,6 +1,6 @@
-import Layout from '../../components/Layout';
-import Paragraph from '../../components/Paragraph';
-import PlayersBar from '../../components/PlayersBar';
+import Layout from '../../components/Layout/Layout';
+import Paragraph from '../../components/Paragraph/Paragraph';
+import PlayersBar from '../../components/PlayersBar/PlayersBar';
 import { NextSeo } from 'next-seo';
 import theme from '../../styles/theme';
 
