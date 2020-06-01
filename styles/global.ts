@@ -3,7 +3,6 @@ import theme from '../styles/theme';
 
 
 const GlobalStyles = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Montserrat:900,400|Raleway:300&display=swap');
   @font-face {
     font-family: 'Kielo';
     src: url('fonts/Kielo-Regular.otf') format('opentype');

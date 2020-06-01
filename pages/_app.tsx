@@ -4,6 +4,7 @@ import Router from 'next/router';
 // @ts-ignore
 import withGA from 'next-ga';
 import GlobalStyles from '../styles/global';
+import { Helmet } from 'react-helmet';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css'; // Import the CSS
 config.autoAddCss = false;
@@ -24,6 +25,12 @@ class Carste extends App {
     const { Component, pageProps } = this.props;
     return (
       <>
+        <Helmet>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Raleway:wght@300&display=swap"
+            rel="stylesheet"
+          />
+        </Helmet>
         <Component {...pageProps} />
         <GlobalStyles />
       </>

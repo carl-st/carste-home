@@ -5,6 +5,8 @@ import {
   faTwitter,
   faGithub,
   faLinkedinIn,
+  faTwitch,
+  faInstagram,
 } from '@fortawesome/free-brands-svg-icons';
 import theme from '../../styles/theme';
 
@@ -79,11 +81,25 @@ const ShareBar: React.FunctionComponent = () => (
         <FontAwesomeIcon icon={faGithub} />
       </a>
       <a
+        aria-label="Instagram"
+        className="fontawesome"
+        href="https://instagram.com/carl_st"
+      >
+        <FontAwesomeIcon icon={faInstagram} />
+      </a>
+      <a
         aria-label="Twitter"
         className="fontawesome"
         href="https://twitter.com/karlos_stepien"
       >
         <FontAwesomeIcon icon={faTwitter} />
+      </a>
+      <a
+        aria-label="Twitch"
+        className="fontawesome"
+        href="https://twitch.com/carl_st"
+      >
+        <FontAwesomeIcon icon={faTwitch} />
       </a>
     </div>
   </>
