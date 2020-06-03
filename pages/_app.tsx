@@ -31,8 +31,8 @@ class Carste extends App {
             rel="stylesheet"
           />
         </Helmet>
-        <Component {...pageProps} />
         <GlobalStyles />
+        <Component {...pageProps} />
       </>
     );
   }

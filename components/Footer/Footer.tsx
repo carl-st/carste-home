@@ -1,35 +1,17 @@
 import React from 'react';
-import theme from '../../styles/theme';
+import { Text, FooterContainer } from './styles';
 
 const Footer: React.FunctionComponent = () => (
-  <>
-    <style jsx global>{`
-      .container {
-        background-color: ${theme.colors.mainBrand};
-        padding: 4rem 2rem;
-      }
-
-      span {
-          margin-right: 4px;
-      }
-
-      @media (min-width: ${theme.breakpoints.tablet}) {
-        .container {
-          padding: 4rem 20%;
-        }
-      }
-    `}</style>
-    <footer className="container">
+    <FooterContainer>
       <p>
-        <span>Fonts Kielo and Planck by Mikko Nuuttila</span>
+        <Text>Fonts Kielo and Planck by Mikko Nuuttila</Text>
         <a href="https://mikkonuuttila.com">Website</a>
       </p>
       <p>
-        <span>Podcast music by DJ Quads</span>
+        <Text>Podcast music by DJ Quads</Text>
         <a href="https://soundcloud.com/aka-dj-quads">Soundcloud</a>
       </p>
-    </footer>
-  </>
+    </FooterContainer>
 );
 
 export default Footer;

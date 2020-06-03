@@ -1,5 +1,4 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faYoutube,
   faSpotify,
@@ -7,96 +6,41 @@ import {
   faGoogle,
 } from '@fortawesome/free-brands-svg-icons';
 import AnchorLogo from '../../public/img/anchor-icon.svg';
-import theme from '../../styles/theme';
+import { SocialContainer, SocialLink, FontAwesomeIconStyled } from './styles';
 
 const PlayersBar: React.FunctionComponent = () => (
-  <>
-    <style jsx>{`
-      .social {
-        display: flex;
-        justify-content: space-around;
-        width: auto;
-      }
-
-      .social a {
-        background-color: transparent;
-        border: 2px solid white;
-        border-radius: 50%;
-        text-decoration: none;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 50px;
-        width: 50px;
-        max-width: 50px;
-        margin-right: 5px;
-        transition: border-color 0.2s linear;
-      }
-
-      .social a:hover {
-        border: 2px solid ${theme.colors.mainBrand};
-      }
-
-      .fontawesome {
-        color: ${theme.colors.lightShades};
-        cursor: pointer;
-        font-size: 1.5rem;
-        text-align: center;
-        line-height: 100%;
-        align-items: center;
-        display: flex;
-      }
-
-      @media (min-width: ${theme.breakpoints.tablet}) {
-        .social {
-          width: auto;
-          justify-content: flex-start;
-        }
-
-        .social a {
-          margin-right: 10px;
-        }
-      }
-    `}</style>
-    <div className="social">
-      <a
-        aria-label="YouTube"
-        className="fontawesome"
-        href="https://www.youtube.com/channel/UCy0fgqSaFsckMDxX5Ulamsg"
-      >
-        <FontAwesomeIcon icon={faYoutube} />
-      </a>
-      <a
-        aria-label="Spotify"
-        className="fontawesome"
-        href="https://open.spotify.com/show/5urLIj00kswGMp4FdABVWg"
-      >
-        <FontAwesomeIcon icon={faSpotify} />
-      </a>
-      <a
-        aria-label="Apple Podcast"
-        className="fontawesome"
-        href="https://podcasts.apple.com/pl/podcast/glosariusz-programisty/id1501417936?l"
-      >
-        <FontAwesomeIcon icon={faApple} />
-      </a>
-      <a
-        aria-label="Google Podcast"
-        className="fontawesome"
-        href="https://www.google.com/podcasts?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy8xNDFiYzYxNC9wb2RjYXN0L3Jzcw=="
-      >
-        <FontAwesomeIcon icon={faGoogle} />
-      </a>
-      <a
-        aria-label="Anchor"
-        className="fontawesome"
-        href="https://anchor.fm/glosariusz-programisty"
-      >
-        <AnchorLogo />
-      </a>
-    </div>
-  </>
+  <SocialContainer>
+    <SocialLink
+      aria-label="YouTube"
+      href="https://www.youtube.com/channel/UCy0fgqSaFsckMDxX5Ulamsg"
+    >
+      <FontAwesomeIconStyled icon={faYoutube} />
+    </SocialLink>
+    <SocialLink
+      aria-label="Spotify"
+      href="https://open.spotify.com/show/5urLIj00kswGMp4FdABVWg"
+    >
+      <FontAwesomeIconStyled icon={faSpotify} />
+    </SocialLink>
+    <SocialLink
+      aria-label="Apple Podcast"
+      href="https://podcasts.apple.com/pl/podcast/glosariusz-programisty/id1501417936?l"
+    >
+      <FontAwesomeIconStyled icon={faApple} />
+    </SocialLink>
+    <SocialLink
+      aria-label="Google Podcast"
+      href="https://www.google.com/podcasts?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy8xNDFiYzYxNC9wb2RjYXN0L3Jzcw=="
+    >
+      <FontAwesomeIconStyled icon={faGoogle} />
+    </SocialLink>
+    <SocialLink
+      aria-label="Anchor"
+      href="https://anchor.fm/glosariusz-programisty"
+    >
+      <AnchorLogo />
+    </SocialLink>
+  </SocialContainer>
 );
 
 export default PlayersBar;
