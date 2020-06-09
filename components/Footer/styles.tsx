@@ -11,6 +11,6 @@ export const FooterContainer = styled.div`
   `}
 `;
 
-export const Text = styled.div`
-  padding: 4rem 20%;
+export const Text = styled.span`
+  margin-right: 4px;
 `;

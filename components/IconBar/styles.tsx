@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { breakpoint } from 'styled-components-breakpoint';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import AnchorLogo from '../../public/img/anchor-icon.svg';
 import theme from '../../styles/theme';
 
 export const SocialContainer = styled.div`
@@ -16,6 +15,7 @@ export const SocialContainer = styled.div`
 `;
 
 export const SocialLink = styled.a`
+  align-items: center;
   background-color: transparent;
   border: 2px solid white;
   border-radius: 50%;
@@ -44,7 +44,4 @@ export const FontAwesomeIconStyled = styled(FontAwesomeIcon)`
   cursor: pointer;
   font-size: 1.5rem;
   text-align: center;
-  line-height: 100%;
-  align-items: center;
-  display: flex;
 `;

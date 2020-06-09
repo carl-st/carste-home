@@ -1,19 +1,19 @@
 import Layout from '../../components/Layout/Layout';
 import Paragraph from '../../components/Paragraph/Paragraph';
-import PlayersBar from '../../components/PlayersBar/PlayersBar';
+import PlayersBar from '../../components/IconBar/PlayersBar';
 import { NextSeo } from 'next-seo';
 import {
   Banner,
   CoverContainer,
-  NameContainer,
-  Logo,
-  PaddedSection,
   CoverImage,
   CoverImageWide,
-  MobilePlayersContainer,
-  YouTubeIframe,
   DesktopPlayersContainer,
-} from './styles';
+  Logo,
+  MobilePlayersContainer,
+  NameContainer,
+  PaddedSection,
+  YouTubeIframe,
+} from '../../styles/pages/podcast/styles';
 
 const paragraphContent: JSX.Element = (
   <>
@@ -62,7 +62,7 @@ const Podcast = () => (
         <CoverImageWide src="/img/keywords-wide.png" alt="podcast-cover" />
         <CoverImage src="/img/podcast-cover.png" alt="podcast-cover" />
       </CoverContainer>
-      <NameContainer className="name-container">
+      <NameContainer>
         <Logo />
         <span>Posłuchaj:</span>
         <PlayersBar />

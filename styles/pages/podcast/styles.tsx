@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { breakpoint } from 'styled-components-breakpoint';
-import PodcastLogo from '../../public/img/podcast-logo.svg';
+import PodcastLogo from '../../../public/img/podcast-logo.svg';
 
 export const PaddedSection = styled.section`
   padding: 0 2rem 4rem;
@@ -11,6 +11,7 @@ export const PaddedSection = styled.section`
 `;
 
 export const Banner = styled.div`
+  align-items: center;
   background-color: black;
   display: flex;
   justify-content: space-between;
@@ -27,33 +28,23 @@ export const CoverContainer = styled.div`
 
 export const NameContainer = styled.div`
   display: none;
-  flex: 1;
-  min-width: 40%;
 
   span {
     margin: 20px;
   }
 
   ${breakpoint('tablet')`
+    align-items: center;
+    background-color: transparent;
+    color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    background-color: transparent;
-    flex: 1;
+    max-height: 450px;
+    max-width: 600px;
     padding: 4rem;
-    color: white;
-  `};
-`;
-
-export const LogoContainer = styled.div`
-  min-width: 90px;
-  width: 90px;
-  margin-right: 30px;
-
-  ${breakpoint('tablet')`
-    margin-right: 60px;
-    min-width: 150px;
+    position: absolute;
+    right: 0;
   `};
 `;
 
@@ -73,11 +64,19 @@ export const CoverImage = styled.img`
 
 export const CoverImageWide = styled.img`
   display: none;
+
+  ${breakpoint('tablet')`
+    display: block;
+  `}
 `;
 
 export const MobilePlayersContainer = styled.div`
   display: flex;
   justify-content: center;
+
+  ${breakpoint('tablet')`
+    display: none;
+  `}
 `;
 
 export const DesktopPlayersContainer = styled(PaddedSection)`
@@ -85,8 +84,16 @@ export const DesktopPlayersContainer = styled(PaddedSection)`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  ${breakpoint('tablet')`
+    display: block;
+  `}
 `;
 
 export const YouTubeIframe = styled.iframe`
   margin: 10px 0;
+
+  ${breakpoint('tablet')`
+    margin: 10px 20px 10px 0;
+  `}
 `;

@@ -7,7 +7,7 @@ import {
   faTwitch,
   faInstagram,
 } from '@fortawesome/free-brands-svg-icons';
-import { SocialContainer, SocialLink, FontAwesomeIconStyled } from '../PlayersBar/styles';
+import { SocialContainer, SocialLink, FontAwesomeIconStyled } from './styles';
 
 const ShareBar: React.FunctionComponent = () => (
   <SocialContainer>
