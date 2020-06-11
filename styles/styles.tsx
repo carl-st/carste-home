@@ -40,6 +40,7 @@ export const TextContainer = styled.div`
 
   ${breakpoint('tablet')`
     flex: 1;
+    max-width: 450px;
     text-align: left;
   `};
 `;
