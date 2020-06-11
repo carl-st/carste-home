@@ -1,9 +1,8 @@
 import React, { ReactNode } from 'react';
 import { NextPage } from 'next';
-import Header from './Header';
-import Footer from './Footer';
-import AdminHeader from './AdminHeader';
-import globalStyles from '../styles/global';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
+import AdminHeader from '../AdminHeader/AdminHeader';
 
 type Props = {
   children: ReactNode;
@@ -12,9 +11,6 @@ type Props = {
 
 const Layout: NextPage<Props> = ({ isAdmin, children }) => (
   <>
-    <style jsx global>
-      {globalStyles}
-    </style>
     {isAdmin ? <AdminHeader /> : <Header />}
     {children}
     <Footer />

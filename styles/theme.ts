@@ -13,7 +13,7 @@ const theme = {
   colors: {
     background: '#FBFBFB',
     lightShades: '#F9F7FB',
-    lightAccent: '#988581', // #988581
+    lightAccent: '#988581',
     mainBrand: '#DEAB4C',
     darkAccent: '#9E4C2C',
     darkShades: '#201F2D',

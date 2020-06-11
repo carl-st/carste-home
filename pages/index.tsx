@@ -1,8 +1,8 @@
-import Layout from '../components/Layout';
-import ShareBar from '../components/ShareBar';
-import Paragraph from '../components/Paragraph';
+import Layout from '../components/Layout/Layout';
+import ShareBar from '../components/IconBar/ShareBar';
+import Paragraph from '../components/Paragraph/Paragraph';
 import { NextSeo } from 'next-seo';
-import theme from '../styles/theme';
+import { Banner, ImageContainer, ProfileImage, TextContainer, PaddedSection } from '../styles/styles';
 
 const paragraphContent: JSX.Element = (
   <>
@@ -18,86 +18,13 @@ const paragraphContent: JSX.Element = (
 
 const Index = () => (
   <Layout>
-    <style jsx>{`
-      section {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        padding: 0 2rem 4rem;
-        align-items: center;
-      }
-
-      section.banner {
-        color: ${theme.colors.mainBrand};
-        justify-content: center;
-        background-image: url('/img/background.jpg');
-        background-position: center;
-        background-size: cover;
-        min-height: calc(100vh - ${theme.sizes.mobileHeaderHeight});
-        align-items: center;
-      }
-
-      .text-container {
-        margin-top: 2rem;
-        text-align: center;
-      }
-
-      .text-container h1 {
-        margin: 0;
-      }
-
-      .profile-image {
-        max-width: 200px;
-        max-height: 200px;
-        border-radius: 50%;
-        margin: 1rem;
-        border: 8px solid ${theme.colors.mainBrand};
-      }
-
-      @media (min-width: ${theme.breakpoints.tablet}) {
-        section {
-          flex-direction: row;
-          padding: 0 20% 4rem;
-        }
-
-        section.banner {
-          min-height: calc(100vh - ${theme.sizes.desktopHeaderHeight});
-        }
-
-        .image-container {
-          flex: 1;
-        }
-
-        .text-container {
-          flex: 1;
-          text-align: left;
-        }
-
-        .image-container {
-          display: flex;
-          justify-content: flex-end;
-        }
-
-        .profile-image {
-          margin: 1rem 4rem;
-          max-width: 300px;
-        }
-      }
-
-      @media (min-width: ${theme.breakpoints.desktop}) {
-        .profile-image {
-          max-width: 400px;
-          max-height: 400px;
-        }
-      }
-    `}</style>
     <NextSeo
-      title="Karol Stępień - Senior Fullstack Engineer"
+      title="Karol Stępień - Senior Full Stack Engineer"
       description="Programista Web i iOS. JavaScript, React, Redux, Node.js, Front-End, Back-End."
       canonical="https://carste.pl/"
       openGraph={{
         url: 'https://carste.pl/',
-        title: 'Karol Stępień - Senior Fullstack Engineer',
+        title: 'Karol Stępień - Senior Full Stack Engineer',
         description: 'Programista Web i iOS. JavaScript, React, Redux, Node.js, Front-End, Back-End.',
         images: [
           {
@@ -115,25 +42,25 @@ const Index = () => (
         cardType: 'summary_large_image',
       }}
     />
-    <section className="banner">
-      <div className="image-container">
+    <Banner>
+      <ImageContainer>
         <div>
-          <img className="profile-image" src="/img/profilepic.jpg" />
+          <ProfileImage className="profile-image" src="/img/profilepic.jpg" />
         </div>
-      </div>
-      <div className="text-container">
+      </ImageContainer>
+      <TextContainer>
         <h1>Karol Stępień</h1>
-        <h2>Senior Fullstack Engineer</h2>
+        <h2>Senior Full Stack Engineer</h2>
         <ShareBar />
-      </div>
-    </section>
-    <section>
+      </TextContainer>
+    </Banner>
+    <PaddedSection>
       <Paragraph
         title="O mnie"
         lead="Czym się zajmuję?"
         content={paragraphContent}
       />
-    </section>
+    </PaddedSection>
   </Layout>
 );
 
