@@ -1,0 +1,6 @@
+{
+  "env": {
+    "FAUNADB_SECRET": "@faunadb_secret",
+    "FAUNADB_GRAPHQL_ENDPOINT": "@faunadb_graphql_endpoint'"
+  }
+}
