@@ -1,9 +1,10 @@
 // @ts-nocheck
 import { useState, useEffect } from 'react'
+import Layout from '../../components/Layout/Layout';
 import { usePosts } from '../../graphql/api'
 
 const getPosts = data => {
-  return data ? data.entries.data.reverse() : [];
+  return data ? data.posts.data.reverse() : [];
 };
 
 const Blog = () => {
@@ -17,8 +18,9 @@ const Blog = () => {
   }, [data, posts.length])
 
   return (
-    <>
+  <Layout>
       <h1>Wkrótce!</h1>
+      {`GQL: ${process.env.NEXT_PUBLIC_FAUNADB_GRAPHQL_ENDPOINT}`}
       <div>
         {errorMessage ? (
           <p>{errorMessage}</p>
@@ -38,7 +40,7 @@ const Blog = () => {
           })
         )}
       </div>
-    </>
+    </Layout>
   );
 };
 

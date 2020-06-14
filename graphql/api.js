@@ -15,7 +15,7 @@ function getErrorMessage(error, data) {
 
 export const usePosts = () => {
   const query = `query Posts($size: Int) {
-    entries(_size: $size) {
+    posts(_size: $size) {
       data {
         _id
         _ts
@@ -30,10 +30,10 @@ export const usePosts = () => {
     }
   }`
   const size = 100
-  const { data, error } = useFetch(process.env.FAUNADB_GRAPHQL_ENDPOINT, {
+  const { data, error } = useFetch(process.env.NEXT_PUBLIC_FAUNADB_GRAPHQL_ENDPOINT, {
     method: 'POST',
     headers: {
-      Authorization: `Bearer ${process.env.FAUNADB_SECRET}`,
+      Authorization: `Bearer ${process.env.NEXT_PUBLIC_FAUNADB_SECRET}`,
       'Content-type': 'application/json',
       Accept: 'application/json',
     },
@@ -68,10 +68,10 @@ export const createPost = async (title, body, author) => {
     }
   }`
 
-  const res = await fetch(process.env.FAUNADB_GRAPHQL_ENDPOINT, {
+  const res = await fetch(process.env.NEXT_PUBLIC_FAUNADB_GRAPHQL_ENDPOINT, {
     method: 'POST',
     headers: {
-      Authorization: `Bearer ${process.env.FAUNADB_SECRET}`,
+      Authorization: `Bearer ${process.env.NEXT_PUBLIC_FAUNADB_SECRET}`,
       'Content-type': 'application/json',
       Accept: 'application/json',
     },
@@ -99,10 +99,10 @@ export const useUsers = () => {
     }
   }`
   const size = 100
-  const { data, error } = useFetch(process.env.FAUNADB_GRAPHQL_ENDPOINT, {
+  const { data, error } = useFetch(process.env.NEXT_PUBLIC_FAUNADB_GRAPHQL_ENDPOINT, {
     method: 'POST',
     headers: {
-      Authorization: `Bearer ${process.env.FAUNADB_SECRET}`,
+      Authorization: `Bearer ${process.env.NEXT_PUBLIC_FAUNADB_SECRET}`,
       'Content-type': 'application/json',
       Accept: 'application/json',
     },
@@ -135,10 +135,10 @@ export const createUser = async (title, body, author) => {
     }
   }`
 
-  const res = await fetch(process.env.FAUNADB_GRAPHQL_ENDPOINT, {
+  const res = await fetch(process.env.NEXT_PUBLIC_FAUNADB_GRAPHQL_ENDPOINT, {
     method: 'POST',
     headers: {
-      Authorization: `Bearer ${process.env.FAUNADB_SECRET}`,
+      Authorization: `Bearer ${process.env.NEXT_PUBLIC_FAUNADB_SECRET}`,
       'Content-type': 'application/json',
       Accept: 'application/json',
     },
