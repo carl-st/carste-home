@@ -11,19 +11,17 @@ import {
 
 const Header: React.FunctionComponent = () => (
   <Navigation>
-    <NameContainer>
-      <Name>CARSTE</Name>
-    </NameContainer>
+    <Link href="/">
+      <NameContainer>
+        <Name>CARSTE</Name>
+      </NameContainer>
+    </Link>
     <NavigationButtonsContainer>
-      <Link href="/">
-        <NavigationButton>
-          O mnie
-        </NavigationButton>
+      <Link href="/blog">
+        <NavigationButton>Blog</NavigationButton>
       </Link>
       <Link href="/podcast">
-        <NavigationButton>
-          Podkast
-        </NavigationButton>
+        <NavigationButton>Podkast</NavigationButton>
       </Link>
     </NavigationButtonsContainer>
   </Navigation>
