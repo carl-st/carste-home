@@ -32,7 +32,7 @@ const Blog = () => {
             return (
               <div key={post._id}>
                 {post.title}
-                {post.author}
+                {post.author?.name}
                 {post.body}
                 {index < allPosts.length - 1 && "----"}
               </div>

@@ -34,6 +34,7 @@ export const Name = styled.div`
   font-weight: 100;
   font-family: ${theme.fontFamily.mainBrand};
   text-align: center;
+  cursor: pointer;
 
   ${breakpoint('tablet')` {
         text-align: left;

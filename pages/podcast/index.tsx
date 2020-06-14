@@ -82,31 +82,26 @@ const Podcast = () => (
       <YouTubeIframe
         width="300"
         src="https://www.youtube.com/embed/fL2EdWlXlZg"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         frameBorder="0"
       ></YouTubeIframe>
       <YouTubeIframe
         width="300"
         src="https://www.youtube.com/embed/GXyxQrxvm9w"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         frameBorder="0"
       ></YouTubeIframe>
       <YouTubeIframe
         width="300"
         src="https://www.youtube.com/embed/ak7qIGLwjkg"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         frameBorder="0"
       ></YouTubeIframe>
       <YouTubeIframe
         width="300"
         src="https://www.youtube.com/embed/8ExZxu3yiTE"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         frameBorder="0"
       ></YouTubeIframe>
       <YouTubeIframe
         width="300"
         src="https://www.youtube.com/embed/-Yjnsvj1dUg"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         frameBorder="0"
       ></YouTubeIframe>
     </DesktopPlayersContainer>
