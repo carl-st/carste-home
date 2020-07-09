@@ -1,4 +1,5 @@
 const withOffline = require('next-offline');
+const withSvgr = require("next-svgr");
 
 const nextConfig = {
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
@@ -6,10 +7,6 @@ const nextConfig = {
     // Perform customizations to webpack config
     // Important: return the modified config
     config.plugins.push(new webpack.IgnorePlugin(/\/__tests__\//));
-    config.module.rules.push({
-      test: /\.svg$/,
-      use: ['@svgr/webpack'],
-    });
     return config;
   },
   webpackDevMiddleware: config => {
@@ -19,4 +16,4 @@ const nextConfig = {
   },
 };
 
-module.exports = withOffline(nextConfig);
+module.exports = withSvgr(withOffline(nextConfig));
