@@ -4,7 +4,7 @@ import { ParagraphContainer } from './styles';
 
 type Props = {
   title: string;
-  lead: string;
+  lead?: string;
   content: JSX.Element;
 };
 
@@ -16,7 +16,7 @@ const Paragraph: React.FunctionComponent<Props> = ({
   <ParagraphContainer>
     <div>
       <h1>{title}</h1>
-      <h2>{lead}</h2>
+      {lead && <h2>{lead}</h2>}
       {content}
     </div>
   </ParagraphContainer>
