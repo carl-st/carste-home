@@ -1,22 +1,13 @@
 import Layout from '../../components/Layout/Layout';
 import Paragraph from '../../components/Paragraph/Paragraph';
 import PlayersBar from '../../components/IconBar/PlayersBar';
+import Banner from '../../pagesComponents/podcast/banner'
 import { NextSeo } from 'next-seo';
-import {
-  Banner,
-  CoverContainer,
-  CoverImage,
-  CoverImageWide,
-  DesktopPlayersContainer,
-  Logo,
-  MobilePlayersContainer,
-  NameContainer,
-  PaddedSection,
-  YouTubeIframe,
-} from '../../styles/pages/podcast/styles';
 import { ReactElement } from 'react';
+import { DesktopPlayersContainer, MobilePlayersContainer, PaddedSection, YouTubeIframe } from '../../styles/styles.common';
+import { NextPage } from 'next';
 
-const paragraphContent: JSX.Element = (
+const paragraphContent: ReactElement = (
   <>
     <p>
       Commit, React, Deployment, CI/CD, Fullstack... Branża IT pełna jest
@@ -98,7 +89,7 @@ const presentationParagraphContent: ReactElement = (
   </>
 );
 
-const Podcast = () => (
+const Podcast: NextPage = () => (
   <Layout>
     <NextSeo
       title="Glosariusz Programisty - zrozum żargon IT"
@@ -126,17 +117,7 @@ const Podcast = () => (
         cardType: 'summary_large_image',
       }}
     />
-    <Banner>
-      <CoverContainer>
-        <CoverImageWide src="/img/keywords-wide.png" alt="podcast-cover" />
-        <CoverImage src="/img/podcast-cover.png" alt="podcast-cover" />
-      </CoverContainer>
-      <NameContainer>
-        <Logo />
-        <span>Posłuchaj:</span>
-        <PlayersBar />
-      </NameContainer>
-    </Banner>
+    <Banner />
     <PaddedSection>
       <Paragraph
         title="Glosariusz Programisty"

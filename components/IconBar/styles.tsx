@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { breakpoint } from 'styled-components-breakpoint';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import theme from '../../styles/theme';
 
@@ -8,10 +7,10 @@ export const SocialContainer = styled.div`
   justify-content: space-around;
   width: auto;
 
-  ${breakpoint('tablet')`
+  @media (min-width: ${theme.breakpoints.tablet}) {
     width: auto;
     justify-content: flex-start;
-  `}
+  }
 `;
 
 export const SocialLink = styled.a`
@@ -34,9 +33,9 @@ export const SocialLink = styled.a`
     border: 2px solid ${theme.colors.mainBrand};
   }
 
-  ${breakpoint('tablet')`
+  @media (min-width: ${theme.breakpoints.tablet}) {
     margin-right: 10px;
-  `}
+  }
 `;
 
 export const FontAwesomeIconStyled = styled(FontAwesomeIcon)`

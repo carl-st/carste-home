@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ComponentType } from 'react';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import {
   faTwitter,
@@ -9,7 +9,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { SocialContainer, SocialLink, FontAwesomeIconStyled } from './styles';
 
-const ShareBar: React.FunctionComponent = () => (
+const ShareBar: ComponentType = () => (
   <SocialContainer>
     <SocialLink
       aria-label="E-Mail"

@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { ComponentType } from 'react';
 import Link from 'next/link';
 
 const linkStyle = {
   marginRight: 15,
 };
 
-const AdminHeader: React.FunctionComponent = () => (
+const AdminHeader: ComponentType = () => (
   <div>
     <Link href="/">
       <span style={linkStyle}>Site</span>

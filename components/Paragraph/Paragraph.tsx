@@ -1,5 +1,4 @@
-import React from 'react';
-import theme from '../../styles/theme';
+import React, { ComponentType } from 'react';
 import { ParagraphContainer } from './styles';
 
 type Props = {
@@ -8,7 +7,7 @@ type Props = {
   content: JSX.Element;
 };
 
-const Paragraph: React.FunctionComponent<Props> = ({
+const Paragraph: ComponentType<Props> = ({
   title,
   lead,
   content,

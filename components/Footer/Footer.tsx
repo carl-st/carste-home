@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { ComponentType } from 'react';
 import { Text, FooterContainer } from './styles';
 
-const Footer: React.FunctionComponent = () => (
+const Footer: ComponentType = () => (
     <FooterContainer>
       <p>
         <Text>Fonts Kielo and Planck by Mikko Nuuttila</Text>

@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { ComponentType } from 'react';
 import Link from 'next/link';
-import theme from '../../styles/theme';
 import {
   Navigation,
   NameContainer,
@@ -9,13 +8,13 @@ import {
   Name,
 } from './styles';
 
-const Header: React.FunctionComponent = () => (
+const Header: ComponentType = () => (
   <Navigation>
     <NameContainer>
       <Name>CARSTE</Name>
     </NameContainer>
     <NavigationButtonsContainer>
-      <Link href="/">
+      <Link href="/home">
         <NavigationButton>
           O mnie
         </NavigationButton>

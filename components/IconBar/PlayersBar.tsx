@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ComponentType } from 'react';
 import {
   faYoutube,
   faSpotify,
@@ -8,7 +8,7 @@ import {
 import AnchorLogo from '../../public/img/anchor-icon.svg';
 import { SocialContainer, SocialLink, FontAwesomeIconStyled } from './styles';
 
-const PlayersBar: React.FunctionComponent = () => (
+const PlayersBar: ComponentType = () => (
   <SocialContainer>
     <SocialLink
       aria-label="YouTube"
