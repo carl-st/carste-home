@@ -1,10 +1,15 @@
 import Layout from '../../components/Layout/Layout';
 import Paragraph from '../../components/Paragraph/Paragraph';
 import PlayersBar from '../../components/IconBar/PlayersBar';
-import Banner from '../../pagesComponents/podcast/banner'
+import Banner from '../../pagesComponents/podcast/banner';
 import { NextSeo } from 'next-seo';
 import { ReactElement } from 'react';
-import { DesktopPlayersContainer, MobilePlayersContainer, PaddedSection, YouTubeIframe } from '../../styles/styles.common';
+import {
+  DesktopPlayersContainer,
+  MobilePlayersContainer,
+  PaddedSection,
+  YouTubeIframe,
+} from '../../styles/styles.common';
 import { NextPage } from 'next';
 
 const paragraphContent: ReactElement = (
@@ -24,7 +29,8 @@ const paragraphContent: ReactElement = (
 const podcastsParagraphContent: ReactElement = (
   <>
     <p>
-      Glosariusz Programisty świetnie sprawdza się w codziennej podróży do pracy, podczas wieczornego spaceru, a także jako opowieść na dobranoc!
+      Glosariusz Programisty świetnie sprawdza się w codziennej podróży do
+      pracy, podczas wieczornego spaceru, a także jako opowieść na dobranoc!
     </p>
     <DesktopPlayersContainer>
       <YouTubeIframe
@@ -90,33 +96,18 @@ const presentationParagraphContent: ReactElement = (
 );
 
 const Podcast: NextPage = () => (
-  <Layout>
-    <NextSeo
-      title="Glosariusz Programisty - zrozum żargon IT"
-      description="Commit, React, Deployment, CI/CD, Fullstack... Branża IT pełna jest
-        trudnych nazw, zapożyczeń oraz skrótów, w których bardzo łatwo się
-        pogubić. Każdy odcinek podkastu wyjaśnia kilka z nich, nawet jeżeli są uważane za podstawowe!"
-      canonical="https://carste.pl/"
-      openGraph={{
-        url: 'https://carste.pl/podcast',
-        title: 'Glosariusz Programisty - zrozum żargon IT',
-        description: `Commit, React, Deployment, CI/CD, Fullstack... Branża IT pełna jest
-            trudnych nazw, zapożyczeń oraz skrótów, w których bardzo łatwo się
-            pogubić. Każdy odcinek podkastu wyjaśnia kilka z nich, nawet jeżeli są uważane za podstawowe!`,
-        images: [
-          {
-            url: 'https://carste.pl/img/podcast-banner.png',
-            alt: 'Podcast banner',
-          },
-        ],
-        site_name: 'Podkast',
-      }}
-      twitter={{
-        handle: '@handle',
-        site: '@site',
-        cardType: 'summary_large_image',
-      }}
-    />
+  <Layout
+    title="Glosariusz Programisty - zrozum żargon IT"
+    description="Commit, React, Deployment, CI/CD, Fullstack... Branża IT pełna jest
+  trudnych nazw, zapożyczeń oraz skrótów, w których bardzo łatwo się
+  pogubić. Każdy odcinek podkastu wyjaśnia kilka z nich, nawet jeżeli są uważane za podstawowe!"
+    metaImages={[
+      {
+        url: 'https://carste.pl/img/podcast-banner.png',
+        alt: 'Podcast banner',
+      },
+    ]}
+  >
     <Banner />
     <PaddedSection>
       <Paragraph
