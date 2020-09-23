@@ -1,5 +1,5 @@
 import React, { ComponentType } from 'react';
-import PlayersBar from '../../../components/IconBar/PlayersBar';
+import PlayersBar from '../../../components/PlayersBar';
 import {
   Container,
   CoverContainer,

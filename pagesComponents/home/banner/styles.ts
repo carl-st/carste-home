@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { PaddedSection } from '../../../styles/styles.common';
+import { PaddedSection } from '../../../styles/common';
 import theme from '../../../styles/theme';
 
 export const Container = styled(PaddedSection)`

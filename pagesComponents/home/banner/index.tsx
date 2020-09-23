@@ -1,5 +1,5 @@
 import React, { ComponentType } from 'react';
-import ShareBar from '../../../components/IconBar/ShareBar';
+import ShareBar from '../../../components/IconBar';
 import {
   Container,
   ImageContainer,

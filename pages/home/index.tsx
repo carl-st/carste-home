@@ -1,20 +1,20 @@
 import { ReactElement } from 'react';
-import Layout from '../../components/Layout/Layout';
-import Paragraph from '../../components/Paragraph/Paragraph';
+import Layout from '../../components/Layout';
+import Paragraph from '../../components/Paragraph';
 import Banner from '../../pagesComponents/home/banner';
-import { PaddedSection } from '../../styles/styles.common';
+import { PaddedSection } from '../../styles/common';
 import { NextPage } from 'next';
 
 const paragraphContent: ReactElement = (
   <>
     <p>
-      Programista Web i iOS. Obecnie ponad 4 lata profesjonalnego doświadczenia.
-      Głównie wykorzystywane przeze mnie technologie webowe to obecnie React,
-      Next.js, Node.js, Nest.js, GraphQL, TypeScript. Pracuję zarówno z
+      Programista Full Stack. Obecnie ponad 6 lat profesjonalnego doświadczenia.
+      Głównie wykorzystywane technologie webowe to obecnie React,
+      Next.js, Node.js, Nest.js, GraphQL, TypeScript, AWS. Praca zarówno z
       klientami zagranicznymi jak i lokalnymi.
     </p>
     <p>W wolnym czasie fan gier na Playstation i Nintendo Switch'a.</p>
-    <p>Czy wiesz już o moim podkaście?</p>
+    <p>Czy wiesz już o Glosariuszu Programisty?</p>
   </>
 );
 

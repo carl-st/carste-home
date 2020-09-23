@@ -1,6 +1,6 @@
-import Layout from '../../components/Layout/Layout';
-import Paragraph from '../../components/Paragraph/Paragraph';
-import PlayersBar from '../../components/IconBar/PlayersBar';
+import Layout from '../../components/Layout';
+import Paragraph from '../../components/Paragraph';
+import PlayersBar from '../../components/PlayersBar';
 import Banner from '../../pagesComponents/podcast/banner';
 import { NextSeo } from 'next-seo';
 import { ReactElement } from 'react';
@@ -9,7 +9,7 @@ import {
   MobilePlayersContainer,
   PaddedSection,
   YouTubeIframe,
-} from '../../styles/styles.common';
+} from '../../styles/common';
 import { NextPage } from 'next';
 
 const paragraphContent: ReactElement = (
@@ -22,7 +22,7 @@ const paragraphContent: ReactElement = (
       programowaniem się zaczyna, masz już trochę doświadczenia, czy może po
       prostu chcesz zrozumieć o co chodzi tym wszystkim nerdom!
     </p>
-    <p>Juź dostępny!</p>
+    <p>Już dostępny!</p>
   </>
 );
 
