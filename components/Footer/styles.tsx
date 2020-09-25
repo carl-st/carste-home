@@ -13,3 +13,12 @@ export const FooterContainer = styled.div`
 export const Text = styled.span`
   margin-right: 4px;
 `;
+
+export const LanguageButton = styled.button`
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  margin-right: 4px;
+  padding: 0;
+  outline: none;
+`;

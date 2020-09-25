@@ -1,12 +1,14 @@
 {
+  "title": "Developer Glossary - Get into the IT jargon",
+  "description": "Commit, React, Deployment, CI/CD, Fullstack... The IT industry is full of difficult names, borrowings and abbreviations, in which it is very easy to get lost. Each episode explains several of them, even if they are considered to be basic. Listen, regardless of whether your adventure with programming has just started, you already have some experience, or maybe just want to understand all this nerd gibberish.",
   "p1title": "Developer Glossary",
   "p1description": "Get into the IT jargon",
   "p11": "Commit, React, Deployment, CI/CD, Fullstack... The IT industry is full of difficult names, borrowings and abbreviations, in which it is very easy to get lost. Each episode explains several of them, even if they are considered to be basic. Listen, regardless of whether your adventure with programming has just started, you already have some experience, or maybe just want to understand all this nerd gibberish.",
-  "p12": "Available now!",
-  "p2title": "Something to listen",
+  "p12": "Available now, unfortunately in Polish only!",
+  "p2title": "Listen",
   "p2description": "Audio format for every moment",
   "p21": "Developer Glossary podcast is perfect for daily work commute, evening walk or as a goodnight story!",
-  "p3title": "Something to watch",
+  "p3title": "Watch",
   "p3description": "Shows for better understanding",
-  "p31": "Developer Glossary is not only an audio podcast. It is also an upcoming series of presentations and videos explaining IT jargon and proper names. Each video is also full of good development practices and interesting facts related to given keyword!"
+  "p31": "Developer Glossary is not only an audio podcast. It is also an upcoming series of presentations and videos explaining IT jargon and proper names. Each video is also full of good development practices and interesting facts related to given keyword! It's in English!"
 }

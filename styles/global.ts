@@ -7,6 +7,10 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Kielo';
     src: url('fonts/Kielo-Regular.otf') format('opentype');
   }
+  @font-face {
+    font-family: 'Planck';
+    src: url('fonts/Planck-Regular.otf') format('opentype');
+  }
   /* @font-face {
     font-family: 'Rentukka';
     src: url('fonts/Rentukka-Regular.otf') format('opentype');
@@ -15,10 +19,6 @@ const GlobalStyles = createGlobalStyle`
     font-family: 'Anson';
     src: url('fonts/Anson-Regular.otf') format('opentype');
   } */
-  @font-face {
-    font-family: 'Planck';
-    src: url('fonts/Planck-Regular.otf') format('opentype');
-  }
 
   * {
     box-sizing: border-box;
@@ -38,15 +38,12 @@ const GlobalStyles = createGlobalStyle`
     font-family: ${theme.fontFamily.heading};
     text-transform: uppercase;
     font-weight: 900;
-    /* background-color: ${theme.colors.darkShades};
-    padding: 2px 8px; */
   }
 
   h2 {
     font-size: 1.2rem;
     font-family: ${theme.fontFamily.heading};
     font-weight: 400;
-
   }
 
   p {

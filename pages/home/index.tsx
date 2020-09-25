@@ -1,47 +1,43 @@
-import { ReactElement } from 'react';
+import { NextPage } from 'next';
 import Layout from '../../components/Layout';
 import Paragraph from '../../components/Paragraph';
 import Banner from '../../pagesComponents/home/banner';
+import { useTranslation } from '../../i18n';
 import { PaddedSection } from '../../styles/common';
-import { NextPage } from 'next';
 
-const paragraphContent: ReactElement = (
-  <>
-    <p>
-      Programista Full Stack. Obecnie ponad 6 lat profesjonalnego doświadczenia.
-      Głównie wykorzystywane technologie webowe to obecnie React,
-      Next.js, Node.js, Nest.js, GraphQL, TypeScript, AWS. Praca zarówno z
-      klientami zagranicznymi jak i lokalnymi.
-    </p>
-    <p>W wolnym czasie fan gier na Playstation i Nintendo Switch'a.</p>
-    <p>Czy wiesz już o Glosariuszu Programisty?</p>
-  </>
-);
+const Home: NextPage = () => {
+  const [t] = useTranslation('home');
+  return (
+    <>
+      <Layout
+        description={t("description")}
+        title="Karol Stępień - Senior Full Stack Engineer"
+        metaImages={[
+          {
+            url: 'https://carste.pl/img/profilepic.jpg',
+            width: 500,
+            height: 500,
+            alt: 'Profile picture',
+          },
+        ]}
+      >
+        <Banner />
+        <PaddedSection>
+          <Paragraph title={t("pTitle")} lead={t("pLead")}>
+            <>
+              <p>{t('p1')}</p>
+              <p>{t('p2')}</p>
+              <p>{t('p3')}</p>
+            </>
+          </Paragraph>
+        </PaddedSection>
+      </Layout>
+    </>
+  );
+};
 
-const Home: NextPage = () => (
-  <>
-    <Layout
-      description="Programista Web i iOS. JavaScript, React, Redux, Node.js, Front-End, Back-End."
-      title="Karol Stępień - Senior Full Stack Engineer"
-      metaImages={[
-        {
-          url: 'https://carste.pl/img/profilepic.jpg',
-          width: 500,
-          height: 500,
-          alt: 'Profile picture',
-        },
-      ]}
-    >
-      <Banner />
-      <PaddedSection>
-        <Paragraph
-          title="O mnie"
-          lead="Czym się zajmuję?"
-          content={paragraphContent}
-        />
-      </PaddedSection>
-    </Layout>
-  </>
-);
+Home.getInitialProps = async () => ({
+  namespacesRequired: ["home"],
+});
 
 export default Home;
