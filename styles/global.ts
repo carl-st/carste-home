@@ -56,6 +56,12 @@ const GlobalStyles = createGlobalStyle`
     color: white;
   }
 
+  button {
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+
   @media (min-width: ${theme.breakpoints.tablet}) {
     h1 {
       font-size: 3rem;

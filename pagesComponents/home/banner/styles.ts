@@ -61,8 +61,8 @@ border: 8px solid ${theme.colors.mainBrand};
 export const DownloadLink = styled(SocialLink)`
   max-width: initial;
   border-radius: 25px;
-  font-weight: 700;
-  font-family: Montserrat, Helvetica, sans-serif;
+  font-weight: 900;
+  font-family: ${theme.fontFamily.heading};
   width: 100%;
   text-transform: uppercase;
 

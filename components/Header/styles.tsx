@@ -53,8 +53,6 @@ export const NavigationButtonsContainer = styled.div`
 `;
 
 export const NavigationButton = styled.div`
-  background: transparent;
-  border: none;
   flex: 1;
   font-family: ${theme.fontFamily.heading};
   font-size: 1.2rem;
