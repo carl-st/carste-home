@@ -1,12 +1,14 @@
 import React from 'react';
 import App from 'next/app';
 import Router from 'next/router';
+import { Helmet } from 'react-helmet';
 // @ts-ignore
 import withGA from 'next-ga';
+import { appWithTranslation } from '../i18n'
 import GlobalStyles from '../styles/global';
-import { Helmet } from 'react-helmet';
 import { config } from '@fortawesome/fontawesome-svg-core';
-import '@fortawesome/fontawesome-svg-core/styles.css'; // Import the CSS
+import '@fortawesome/fontawesome-svg-core/styles.css';
+
 config.autoAddCss = false;
 class Carste extends App {
   // Only uncomment this method if you have blocking data requirements for
@@ -38,4 +40,4 @@ class Carste extends App {
   }
 }
 
-export default withGA('UA-159498003-1', Router)(Carste);
+export default appWithTranslation(withGA('UA-159498003-1', Router)(Carste));

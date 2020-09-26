@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-import { breakpoint } from 'styled-components-breakpoint';
 import theme from '../../styles/theme';
 
-export const Navigation = styled.div`
+export const Navigation = styled.header`
   background-color: ${theme.colors.lightShades};
   color: black;
   display: flex;
@@ -15,10 +14,10 @@ export const Navigation = styled.div`
   z-index: 1;
   flex-direction: column;
 
-  ${breakpoint('tablet')`
+  @media (min-width: ${theme.breakpoints.tablet}) {
     flex-direction: row;
     height: ${theme.sizes.desktopHeaderHeight};
-  `}
+  }
 `;
 
 export const NameContainer = styled.div`
@@ -35,10 +34,10 @@ export const Name = styled.div`
   font-family: ${theme.fontFamily.mainBrand};
   text-align: center;
 
-  ${breakpoint('tablet')` {
+  @media (min-width: ${theme.breakpoints.tablet}) {
         text-align: left;
         font-size: 3rem;
-    }`}
+    }
 `;
 
 export const NavigationButtonsContainer = styled.div`
@@ -48,14 +47,12 @@ export const NavigationButtonsContainer = styled.div`
   justify-content: flex-end;
   text-align: center;
 
-  ${breakpoint('tablet')` {
+  @media (min-width: ${theme.breakpoints.tablet}) {
     max-width: 400px;
-  }`}
+  }
 `;
 
 export const NavigationButton = styled.div`
-  background: transparent;
-  border: none;
   flex: 1;
   font-family: ${theme.fontFamily.heading};
   font-size: 1.2rem;
@@ -71,9 +68,9 @@ export const NavigationButton = styled.div`
     cursor: pointer;
   }
 
-  ${breakpoint('tablet')` {
+  @media (min-width: ${theme.breakpoints.tablet}) {
     font-size: 1.6rem;
-  }`}
+  }
 `;
 
 export const MenuButton = styled.div`
@@ -82,9 +79,9 @@ export const MenuButton = styled.div`
   background: transparent;
   border: none;
 
-  ${breakpoint('tablet')` {
+  @media (min-width: ${theme.breakpoints.tablet}) {
     display: none;
-  }`}
+  }
 `;
 
 export const FullscreenMenu = styled.div`
