@@ -16,8 +16,8 @@ const Podcast: NextPage = () => {
 
   return (
     <Layout
-      title={t("title")}
-      description={t("description")}
+      title={t('title')}
+      description={t('description')}
       metaImages={[
         {
           url: 'https://carste.pl/img/podcast-banner.png', // TODO: Change based on language
@@ -30,7 +30,7 @@ const Podcast: NextPage = () => {
         <Paragraph title={t('p1title')} lead={t('p1description')}>
           <>
             <p>{t('p11')}</p>
-            <p> {t('p12')}</p>
+            <p>{t('p12')}</p>
           </>
         </Paragraph>
         <Paragraph title={t('p2title')} lead={t('p2description')}>
@@ -38,38 +38,7 @@ const Podcast: NextPage = () => {
             <p>{t('p21')}</p>
             <DesktopPlayersContainer>
               <YouTubeIframe
-                width="300"
-                src="https://www.youtube.com/embed/fL2EdWlXlZg"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                frameBorder="0"
-              ></YouTubeIframe>
-              <YouTubeIframe
-                width="300"
-                src="https://www.youtube.com/embed/GXyxQrxvm9w"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                frameBorder="0"
-              ></YouTubeIframe>
-              <YouTubeIframe
-                width="300"
-                src="https://www.youtube.com/embed/ak7qIGLwjkg"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                frameBorder="0"
-              ></YouTubeIframe>
-              <YouTubeIframe
-                width="300"
-                src="https://www.youtube.com/embed/8ExZxu3yiTE"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                frameBorder="0"
-              ></YouTubeIframe>
-              <YouTubeIframe
-                width="300"
-                src="https://www.youtube.com/embed/-Yjnsvj1dUg"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                frameBorder="0"
-              ></YouTubeIframe>
-              <YouTubeIframe
-                width="300"
-                src="https://www.youtube.com/embed/86yIzvUJdsI"
+                src="https://www.youtube.com//embed/videoseries?list=PLk10pO-PdzF7sEeUecFUWE4QpgydS-msR"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 frameBorder="0"
               ></YouTubeIframe>
@@ -84,8 +53,7 @@ const Podcast: NextPage = () => {
             <p>{t('p31')}</p>
             <DesktopPlayersContainer>
               <YouTubeIframe
-                width="300"
-                src="https://www.youtube.com/embed/bznmSm4aOz8"
+                src="https://www.youtube.com//embed/videoseries?list=PLk10pO-PdzF6Cu5uSkuF0xSxNA5HAJdc8"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 frameBorder="0"
               ></YouTubeIframe>

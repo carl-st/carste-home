@@ -11,7 +11,7 @@ import {
 } from './styles';
 
 const Banner: ComponentType = () => {
-  const [t] = useTranslation('banner');
+  const [t] = useTranslation('podcast-banner');
 
   return (
     <Container>

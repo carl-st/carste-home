@@ -23,7 +23,7 @@ export const MobilePlayersContainer = styled.div`
   }
 `;
 
-export const DesktopPlayersContainer = styled(PaddedSection)`
+export const DesktopPlayersContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,10 +35,14 @@ export const DesktopPlayersContainer = styled(PaddedSection)`
 `;
 
 export const YouTubeIframe = styled.iframe`
-  margin: 10px 0;
+  margin: 10px 0 30px;
+  height: 225px;
+  width: 100%;
 
   @media (min-width: ${theme.breakpoints.tablet}) {
+  height: 315px;
     margin: 10px 20px 10px 0;
+    max-width: 560px;
   }
 `;
 
@@ -46,6 +50,7 @@ export const SocialContainer = styled.div`
   display: flex;
   justify-content: space-around;
   width: auto;
+  margin-bottom: 10px;
 
   @media (min-width: ${theme.breakpoints.tablet}) {
     width: auto;
@@ -63,14 +68,20 @@ export const SocialLink = styled.a`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 50px;
-  width: 50px;
-  max-width: 50px;
+  height: 40px;
+  width: 40px;
+  max-width: 40px;
   margin-right: 5px;
   transition: border-color 0.2s linear;
 
   &:hover {
     border: 2px solid ${theme.colors.mainBrand};
+  }
+
+  @media (min-width: ${theme.breakpoints.bigMobile}) {
+    height: 50px;
+    width: 50px;
+    max-width: 50px;
   }
 
   @media (min-width: ${theme.breakpoints.tablet}) {

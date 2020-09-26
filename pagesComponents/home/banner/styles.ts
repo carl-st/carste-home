@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { PaddedSection } from '../../../styles/common';
+import { PaddedSection, SocialLink } from '../../../styles/common';
 import theme from '../../../styles/theme';
 
 export const Container = styled(PaddedSection)`
@@ -18,7 +18,6 @@ export const Container = styled(PaddedSection)`
 `;
 
 export const TextContainer = styled.div`
-  margin-top: 2rem;
   text-align: center;
 
   h1 {
@@ -57,4 +56,18 @@ border: 8px solid ${theme.colors.mainBrand};
   max-width: 400px;
   max-height: 400px;
 }
+`;
+
+export const DownloadLink = styled(SocialLink)`
+  max-width: initial;
+  border-radius: 25px;
+  font-weight: 700;
+  font-family: Montserrat, Helvetica, sans-serif;
+  width: 100%;
+  text-transform: uppercase;
+
+  @media (min-width: ${theme.breakpoints.bigMobile}) {
+    width: 350px;
+    max-width: 350px;
+  }
 `;

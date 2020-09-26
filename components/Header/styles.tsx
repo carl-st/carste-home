@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import theme from '../../styles/theme';
 
-export const Navigation = styled.div`
+export const Navigation = styled.header`
   background-color: ${theme.colors.lightShades};
   color: black;
   display: flex;
