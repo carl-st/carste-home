@@ -16,6 +16,7 @@ export const Container = styled.div`
 
 export const CoverContainer = styled.div`
   flex: 2;
+  overflow: hidden;
 `;
 
 export const NameContainer = styled.div`
