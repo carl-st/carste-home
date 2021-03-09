@@ -3,7 +3,7 @@ import Layout from '../../components/Layout';
 import Paragraph from '../../components/Paragraph';
 import PlayersBar from '../../components/PlayersBar';
 import Banner from '../../pagesComponents/podcast/banner';
-import { useTranslation } from '../../i18n';
+import { useTranslation } from 'next-i18next';
 import {
   DesktopPlayersContainer,
   MobilePlayersContainer,

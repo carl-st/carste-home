@@ -1,5 +1,6 @@
 const withOffline = require('next-offline');
 const withSvgr = require("next-svgr");
+const { i18n } = require('./next-i18next.config')
 
 const nextConfig = {
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
@@ -14,6 +15,7 @@ const nextConfig = {
     // Important: return the modified config
     return config;
   },
+  i18n,
 };
 
 module.exports = withSvgr(withOffline(nextConfig));

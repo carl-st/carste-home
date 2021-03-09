@@ -2,7 +2,7 @@ import { NextPage } from 'next';
 import Layout from '../../components/Layout';
 import Paragraph from '../../components/Paragraph';
 import Banner from '../../pagesComponents/home/banner';
-import { useTranslation } from '../../i18n';
+import { useTranslation } from 'next-i18next';
 import { PaddedSection } from '../../styles/common';
 
 const Home: NextPage = () => {
