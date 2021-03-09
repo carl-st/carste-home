@@ -1,6 +1,6 @@
 import React, { ComponentType } from 'react';
 import PlayersBar from '../../../components/PlayersBar';
-import { useTranslation } from '../../../i18n';
+import { useTranslation } from 'next-i18next';
 import {
   Container,
   CoverContainer,

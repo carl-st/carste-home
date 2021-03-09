@@ -4,7 +4,8 @@ import Router from 'next/router';
 import { Helmet } from 'react-helmet';
 // @ts-ignore
 import withGA from 'next-ga';
-import { appWithTranslation } from '../i18n'
+import { appWithTranslation } from 'next-i18next'
+import nextI18NextConfig from '../next-i18next.config.js'
 import GlobalStyles from '../styles/global';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
@@ -40,4 +41,4 @@ class Carste extends App {
   }
 }
 
-export default appWithTranslation(withGA('UA-159498003-1', Router)(Carste));
+export default appWithTranslation(withGA('UA-159498003-1', Router)(Carste), nextI18NextConfig);

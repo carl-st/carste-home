@@ -1,5 +1,5 @@
 import React, { ComponentType } from 'react';
-import { useTranslation } from '../../i18n';
+import { useTranslation } from 'next-i18next';
 import { Text, FooterContainer, LanguageButton } from './styles';
 
 const Footer: ComponentType = () => {

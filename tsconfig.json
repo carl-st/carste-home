@@ -25,5 +25,5 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx", "styles/pages/podcast"
-  ]
+, "next-i18next.config.js"  ]
 }
