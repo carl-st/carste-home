@@ -29,10 +29,15 @@ class Carste extends App {
     return (
       <>
         <Helmet>
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Raleway:wght@300&display=swap"
             rel="stylesheet"
           />
+          {/* <link rel="preload" href="/fonts/Anson-Regular.otf" as="font" type="font/opentype" /> */}
+          <link rel="preload" href="/fonts/Kielo-Regular.otf" as="font" type="font/opentype" />
+          <link rel="preload" href="/fonts/Planck-Regular.otf" as="font" type="font/opentype" />
+          {/* <link rel="preload" href="/fonts/Rentukka-Regular.otf" as="font" type="font/opentype" /> */}
         </Helmet>
         <GlobalStyles />
         <Component {...pageProps} />

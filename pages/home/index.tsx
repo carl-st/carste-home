@@ -1,8 +1,9 @@
-import { NextPage } from 'next';
+import { GetStaticProps, NextPage } from 'next';
 import Layout from '../../components/Layout';
 import Paragraph from '../../components/Paragraph';
 import Banner from '../../pagesComponents/home/banner';
 import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { PaddedSection } from '../../styles/common';
 
 const Home: NextPage = () => {
@@ -36,8 +37,10 @@ const Home: NextPage = () => {
   );
 };
 
-Home.getInitialProps = async () => ({
-  namespacesRequired: ["home"],
-});
+export const getStaticProps: GetStaticProps = async ({ locale }) => ({
+  props: {
+    ...await serverSideTranslations(locale || 'pl', ['home']),
+  },
+})
 
 export default Home;

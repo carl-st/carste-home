@@ -1,8 +1,9 @@
-import { NextPage } from 'next';
+import { GetStaticProps, NextPage } from 'next';
 import Layout from '../../components/Layout';
 import Paragraph from '../../components/Paragraph';
 import PlayersBar from '../../components/PlayersBar';
 import Banner from '../../pagesComponents/podcast/banner';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import {
   DesktopPlayersContainer,
@@ -65,8 +66,11 @@ const Podcast: NextPage = () => {
   );
 };
 
-Podcast.getInitialProps = async () => ({
-  namespacesRequired: ['podcast'],
-});
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => ({
+  props: {
+    ...await serverSideTranslations(locale || 'pl', ['podcast']),
+  },
+})
 
 export default Podcast;
