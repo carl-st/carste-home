@@ -1,12 +1,12 @@
 import React, { ComponentType } from 'react';
-import { useTranslation } from 'next-i18next';
+import { useRouter } from 'next/router';
+import Link from 'next/link';
 import { Text, FooterContainer, LanguageButton } from './styles';
 
 const Footer: ComponentType = () => {
-  const [t, i18n] = useTranslation('footer');
-
+  const router = useRouter();
   const renderLanguageButtonLabel = () => {
-    if (i18n.language === 'pl') {
+    if (router.locale === 'pl') {
       return (
         <span>
           <u>{'PL'}</u>
@@ -24,14 +24,12 @@ const Footer: ComponentType = () => {
 
   return (
     <FooterContainer>
-      <LanguageButton
-          type="button"
-          onClick={() =>
-            i18n.changeLanguage(i18n.language === "pl" ? "en" : "pl")
-          }
-        >
-          {renderLanguageButtonLabel()}
-      </LanguageButton>
+      <Link
+        href={router.pathname}
+        locale={router.locale === 'pl' ? 'en' : 'pl'}
+      >
+        <LanguageButton>{renderLanguageButtonLabel()}</LanguageButton>
+      </Link>
       <p>
         <Text>Fonts Kielo and Planck by Mikko Nuuttila</Text>
         <a href="https://mikkonuuttila.com">Website</a>

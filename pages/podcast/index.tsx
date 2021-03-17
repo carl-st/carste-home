@@ -66,11 +66,13 @@ const Podcast: NextPage = () => {
   );
 };
 
-
 export const getStaticProps: GetStaticProps = async ({ locale }) => ({
   props: {
-    ...await serverSideTranslations(locale || 'pl', ['podcast']),
+    ...(await serverSideTranslations(locale || '', [
+      'podcast',
+      'podcast-banner',
+    ])),
   },
-})
+});
 
 export default Podcast;

@@ -11,7 +11,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Layout
-        description={t("description")}
+        description={t('description')}
         title="Karol Stępień - Senior Full Stack Engineer"
         metaImages={[
           {
@@ -24,7 +24,7 @@ const Home: NextPage = () => {
       >
         <Banner />
         <PaddedSection>
-          <Paragraph title={t("pTitle")} lead={t("pLead")}>
+          <Paragraph title={t('pTitle')} lead={t('pLead')}>
             <>
               <p>{t('p1')}</p>
               <p>{t('p2')}</p>
@@ -39,8 +39,8 @@ const Home: NextPage = () => {
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => ({
   props: {
-    ...await serverSideTranslations(locale || 'pl', ['home']),
+    ...(await serverSideTranslations(locale || '', ['home', 'home-banner'])),
   },
-})
+});
 
 export default Home;
