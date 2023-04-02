@@ -1,17 +1,13 @@
-import React, { ComponentType, ReactChild } from 'react';
+import React, { ComponentType, ReactNode } from 'react';
 import { ParagraphContainer } from './styles';
 
 type Props = {
   title: string;
-  lead?: string;
-  children: ReactChild;
+  lead?: string | null;
+  children: ReactNode;
 };
 
-const Paragraph: ComponentType<Props> = ({
-  title,
-  lead,
-  children
-}) => (
+const Paragraph: ComponentType<Props> = ({ title, lead, children }) => (
   <ParagraphContainer>
     <div>
       <h1>{title}</h1>

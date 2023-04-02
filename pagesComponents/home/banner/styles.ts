@@ -41,21 +41,21 @@ export const ImageContainer = styled.div`
 `;
 
 export const ProfileImage = styled.img`
-max-width: 200px;
-max-height: 200px;
-border-radius: 50%;
-margin: 1rem;
-border: 8px solid ${theme.colors.mainBrand};
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 50%;
+  margin: 1rem;
+  border: 8px solid ${theme.colors.mainBrand};
 
-@media (min-width: ${theme.breakpoints.tablet}) {
-  margin: 1rem 4rem;
-  max-width: 300px;
-}
+  @media (min-width: ${theme.breakpoints.tablet}) {
+    margin: 1rem 4rem;
+    max-width: 300px;
+  }
 
-@media (min-width: ${theme.breakpoints.desktop}) {
-  max-width: 400px;
-  max-height: 400px;
-}
+  @media (min-width: ${theme.breakpoints.desktop}) {
+    max-width: 400px;
+    max-height: 400px;
+  }
 `;
 
 export const DownloadLink = styled(SocialLink)`

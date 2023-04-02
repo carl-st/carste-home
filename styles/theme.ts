@@ -26,8 +26,8 @@ const theme = {
   },
   sizes: {
     desktopHeaderHeight: '78px',
-    mobileHeaderHeight: '107px'
-  }
+    mobileHeaderHeight: '107px',
+  },
 };
 
 export default theme;

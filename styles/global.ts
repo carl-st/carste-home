@@ -1,7 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import theme from '../styles/theme';
 
-
 const GlobalStyles = createGlobalStyle`
   @font-face {
     font-family: 'Kielo';

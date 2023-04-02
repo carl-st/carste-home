@@ -23,8 +23,11 @@ const Banner: ComponentType = () => {
         <h1>Karol Stępień</h1>
         <h2>Senior Full Stack Engineer</h2>
         <IconBar />
-        <DownloadLink href="/files/CV Karol Stępień - Senior Full Stack Developer.pdf" download>
-          {t("download")}
+        <DownloadLink
+          href="/files/CV Karol Stępień - Senior Full Stack Developer.pdf"
+          download
+        >
+          {t('download')}
         </DownloadLink>
       </TextContainer>
     </Container>

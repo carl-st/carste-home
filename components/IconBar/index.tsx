@@ -7,7 +7,11 @@ import {
   faTwitch,
   faInstagram,
 } from '@fortawesome/free-brands-svg-icons';
-import { SocialContainer, SocialLink, FontAwesomeIconStyled } from '../../styles/common';
+import {
+  SocialContainer,
+  SocialLink,
+  FontAwesomeIconStyled,
+} from '../../styles/common';
 
 const ShareBar: ComponentType = () => (
   <SocialContainer>

@@ -15,14 +15,10 @@ const Header: ComponentType = () => (
     </NameContainer>
     <NavigationButtonsContainer>
       <Link href="/home">
-        <NavigationButton>
-          Start
-        </NavigationButton>
+        <NavigationButton>Start</NavigationButton>
       </Link>
       <Link href="/podcast">
-        <NavigationButton>
-          Podcast
-        </NavigationButton>
+        <NavigationButton>Podcast</NavigationButton>
       </Link>
     </NavigationButtonsContainer>
   </Navigation>

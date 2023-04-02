@@ -35,37 +35,42 @@ export const Name = styled.div`
   text-align: center;
 
   @media (min-width: ${theme.breakpoints.tablet}) {
-        text-align: left;
-        font-size: 3rem;
-    }
+    text-align: left;
+    font-size: 3rem;
+  }
 `;
 
 export const NavigationButtonsContainer = styled.div`
   align-items: center;
   display: flex;
   flex: 1;
-  justify-content: flex-end;
+  justify-content: center;
   text-align: center;
 
   @media (min-width: ${theme.breakpoints.tablet}) {
+    justify-content: flex-end;
     max-width: 400px;
   }
 `;
 
 export const NavigationButton = styled.div`
   flex: 1;
+  color: ${theme.colors.darkShades};
   font-family: ${theme.fontFamily.heading};
   font-size: 1.2rem;
   font-weight: 900;
   line-height: 3rem;
   text-transform: uppercase;
   min-width: 120px;
+  padding: 4px 8px;
+  margin: 0 4px;
 
   &:hover {
     background: ${theme.colors.mainBrand};
     border-radius: 4px;
     color: white;
     cursor: pointer;
+    text-decoration: none;
   }
 
   @media (min-width: ${theme.breakpoints.tablet}) {
