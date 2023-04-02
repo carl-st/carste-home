@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import { NextPage } from 'next';
 import Head from 'next/head';
 import { NextSeo } from 'next-seo';
-import { OpenGraphImages } from 'next-seo/lib/types';
+import { OpenGraphMedia } from 'next-seo/lib/types';
 import Header from '../Header';
 import Footer from '../Footer';
 import AdminHeader from '../AdminHeader';
@@ -12,12 +12,18 @@ type Props = {
   isAdmin?: boolean;
   title: string;
   description: string;
-  metaImages: OpenGraphImages[];
+  metaImages: ReadonlyArray<OpenGraphMedia>;
 };
 
-const Layout: NextPage<Props> = ({ isAdmin, children, title, description, metaImages }) => (
+const Layout: NextPage<Props> = ({
+  isAdmin,
+  children,
+  title,
+  description,
+  metaImages,
+}) => (
   <>
-  <Head>
+    <Head>
       <link
         rel="apple-touch-icon"
         sizes="180x180"
@@ -43,22 +49,22 @@ const Layout: NextPage<Props> = ({ isAdmin, children, title, description, metaIm
       <meta name="theme-color" content="#201f2d"></meta>
     </Head>
     <NextSeo
-        title={title}
-        description={description}
-        canonical="https://carste.pl/"
-        openGraph={{
-          url: 'https://carste.pl/',
-          title,
-          description,
-          images: metaImages,
-          site_name: 'Carste',
-        }}
-        twitter={{
-          handle: '@handle',
-          site: '@site',
-          cardType: 'summary_large_image',
-        }}
-      />
+      title={title}
+      description={description}
+      canonical="https://carste.pl/"
+      openGraph={{
+        url: 'https://carste.pl/',
+        title,
+        description,
+        images: metaImages,
+        site_name: 'Carste',
+      }}
+      twitter={{
+        handle: '@handle',
+        site: '@site',
+        cardType: 'summary_large_image',
+      }}
+    />
     {isAdmin ? <AdminHeader /> : <Header />}
     {children}
     <Footer />
