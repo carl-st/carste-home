@@ -12,18 +12,6 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 
 config.autoAddCss = false;
 class Carste extends App {
-  // Only uncomment this method if you have blocking data requirements for
-  // every single page in your application. This disables the ability to
-  // perform automatic static optimization, causing every page in your app to
-  // be server-side rendered.
-  //
-  // static async getInitialProps(appContext) {
-  //   // calls page's `getInitialProps` and fills `appProps.pageProps`
-  //   const appProps = await App.getInitialProps(appContext);
-  //
-  //   return { ...appProps }
-  // }
-
   render() {
     const { Component, pageProps } = this.props;
     return (
@@ -34,10 +22,8 @@ class Carste extends App {
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Raleway:wght@300&display=swap"
             rel="stylesheet"
           />
-          {/* <link rel="preload" href="/fonts/Anson-Regular.otf" as="font" type="font/opentype" /> */}
           <link rel="preload" href="/fonts/Kielo-Regular.otf" as="font" type="font/opentype" />
           <link rel="preload" href="/fonts/Planck-Regular.otf" as="font" type="font/opentype" />
-          {/* <link rel="preload" href="/fonts/Rentukka-Regular.otf" as="font" type="font/opentype" /> */}
         </Helmet>
         <GlobalStyles />
         <Component {...pageProps} />
