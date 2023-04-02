@@ -40,7 +40,7 @@ export const YouTubeIframe = styled.iframe`
   width: 100%;
 
   @media (min-width: ${theme.breakpoints.tablet}) {
-  height: 315px;
+    height: 315px;
     margin: 10px 20px 10px 0;
     max-width: 560px;
   }

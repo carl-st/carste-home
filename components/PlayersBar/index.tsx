@@ -6,7 +6,11 @@ import {
   faGoogle,
 } from '@fortawesome/free-brands-svg-icons';
 import AnchorLogo from '../../public/img/anchor-icon.svg';
-import { SocialContainer, SocialLink, FontAwesomeIconStyled } from '../../styles/common';
+import {
+  SocialContainer,
+  SocialLink,
+  FontAwesomeIconStyled,
+} from '../../styles/common';
 
 const PlayersBar: ComponentType = () => (
   <SocialContainer>
