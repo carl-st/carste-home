@@ -2,7 +2,7 @@ import React from 'react';
 import App from 'next/app';
 import { Helmet } from 'react-helmet';
 import { appWithTranslation } from 'next-i18next';
-import nextI18NextConfig from '../next-i18next.config.js';
+import nextI18NextConfig from '../next-i18next.config';
 import GlobalStyles from '../styles/global';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
