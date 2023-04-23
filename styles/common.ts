@@ -6,11 +6,11 @@ export const PaddedSection = styled.section`
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: 0 2rem 4rem;
+  padding: 2rem;
   align-items: center;
 
   @media (min-width: ${theme.breakpoints.tablet}) {
-    padding: 0 20% 4rem;
+    padding: 4rem 15%;
   }
 `;
 
@@ -87,6 +87,13 @@ export const SocialLink = styled.a`
   @media (min-width: ${theme.breakpoints.tablet}) {
     margin-right: 10px;
   }
+`;
+
+export const DownloadLink = styled(SocialLink)`
+  border-radius: 25px;
+  font-weight: 900;
+  font-family: ${theme.fontFamily.heading};
+  text-transform: uppercase;
 `;
 
 export const FontAwesomeIconStyled = styled(FontAwesomeIcon)`

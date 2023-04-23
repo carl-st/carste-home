@@ -97,3 +97,12 @@ export const FullscreenMenu = styled.div`
   width: 100%;
   z-index: 2;
 `;
+
+export const LanguageButton = styled.button`
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  margin-right: 4px;
+  padding: 0;
+  outline: none;
+`;

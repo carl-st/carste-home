@@ -11,6 +11,7 @@ import {
   SocialContainer,
   SocialLink,
   FontAwesomeIconStyled,
+  DownloadLink,
 } from '../../styles/common';
 
 const ShareBar: ComponentType = () => (
@@ -57,6 +58,12 @@ const ShareBar: ComponentType = () => (
     >
       <FontAwesomeIconStyled icon={faTwitch} />
     </SocialLink>
+    <DownloadLink
+          href="/files/CV Karol Stępień.pdf"
+          download
+        >
+          {"CV"}
+        </DownloadLink>
   </SocialContainer>
 );
 

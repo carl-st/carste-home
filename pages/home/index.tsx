@@ -22,7 +22,9 @@ const Home: NextPage = () => {
           },
         ]}
       >
-        <Banner />
+        <PaddedSection>
+          <Banner />
+        </PaddedSection>
         <PaddedSection>
           <Paragraph title={t('pTitle')} lead={t('pLead')}>
             <>
