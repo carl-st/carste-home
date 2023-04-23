@@ -24,7 +24,7 @@ const Banner: ComponentType = () => {
         <h2>Senior Full Stack Engineer</h2>
         <IconBar />
         <DownloadLink
-          href="/files/CV Karol Stępień - Senior Full Stack Developer.pdf"
+          href="/files/CV Karol Stępień.pdf"
           download
         >
           {t('download')}
