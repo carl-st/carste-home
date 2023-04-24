@@ -1,5 +1,5 @@
 {
-    "editor.tabSize": 2,
-    "eslint.run": "onSave",
-    "prettier.run": "onSave",
+  "editor.tabSize": 2,
+  "eslint.run": "onSave",
+  "prettier.run": "onSave"
 }

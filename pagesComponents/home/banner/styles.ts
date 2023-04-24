@@ -35,5 +35,3 @@ export const ProfileImage = styled(Image)`
   border: 4px solid ${theme.colors.mainBrand};
   margin-right: 48px;
 `;
-
-

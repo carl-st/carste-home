@@ -58,12 +58,9 @@ const ShareBar: ComponentType = () => (
     >
       <FontAwesomeIconStyled icon={faTwitch} />
     </SocialLink>
-    <DownloadLink
-          href="/files/CV Karol Stępień.pdf"
-          download
-        >
-          {"CV"}
-        </DownloadLink>
+    <DownloadLink href="/files/CV Karol Stępień.pdf" download>
+      {'CV'}
+    </DownloadLink>
   </SocialContainer>
 );
 

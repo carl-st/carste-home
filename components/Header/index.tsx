@@ -28,27 +28,28 @@ const Header: ComponentType = () => {
       </span>
     );
   };
-  
-return (
-  <Navigation>
-    <NameContainer>
-      <Name>CARSTE</Name>
-    </NameContainer>
-    <NavigationButtonsContainer>
-      <Link href="/home">
-        <NavigationButton>Start</NavigationButton>
-      </Link>
-      <Link href="/podcast">
-        <NavigationButton>Podcast</NavigationButton>
-      </Link>
-      <Link
-        href={router.pathname}
-        locale={router.locale === 'pl' ? 'en' : 'pl'}
-      >
-        <LanguageButton>{renderLanguageButtonLabel()}</LanguageButton>
-      </Link>
-    </NavigationButtonsContainer>
-  </Navigation>
-)};
+
+  return (
+    <Navigation>
+      <NameContainer>
+        <Name>CARSTE</Name>
+      </NameContainer>
+      <NavigationButtonsContainer>
+        <Link href="/home">
+          <NavigationButton>Start</NavigationButton>
+        </Link>
+        <Link href="/podcast">
+          <NavigationButton>Podcast</NavigationButton>
+        </Link>
+        <Link
+          href={router.pathname}
+          locale={router.locale === 'pl' ? 'en' : 'pl'}
+        >
+          <LanguageButton>{renderLanguageButtonLabel()}</LanguageButton>
+        </Link>
+      </NavigationButtonsContainer>
+    </Navigation>
+  );
+};
 
 export default Header;
