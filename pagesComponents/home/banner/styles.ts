@@ -6,26 +6,31 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   color: ${theme.colors.mainBrand};
+  min-width: 100%;
+  flex-direction: column;
 
-  @media (min-width: ${theme.breakpoints.tablet}) {
+  @media (min-width: ${theme.breakpoints.desktop}) {
     flex-direction: row;
   }
 `;
 
 export const TextContainer = styled.div`
+  text-align: center;
+
   h1 {
     margin: 0;
   }
 
-  @media (min-width: ${theme.breakpoints.tablet}) {
+  @media (min-width: ${theme.breakpoints.desktop}) {
     flex: 1;
+    text-align: left;
   }
 `;
 
 export const ImageContainer = styled.div`
   display: block;
 
-  @media (min-width: ${theme.breakpoints.tablet}) {
+  @media (min-width: ${theme.breakpoints.desktop}) {
     display: flex;
     justify-content: flex-end;
   }
@@ -33,5 +38,8 @@ export const ImageContainer = styled.div`
 
 export const ProfileImage = styled(Image)`
   border: 4px solid ${theme.colors.mainBrand};
-  margin-right: 48px;
+  
+  @media (min-width: ${theme.breakpoints.desktop}) {
+    margin-right: 48px;
+  }
 `;

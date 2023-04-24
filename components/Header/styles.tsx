@@ -12,6 +12,8 @@ export const Navigation = styled.header`
   top: 0;
   transition: height 0.3s ease-in;
   z-index: 1;
+  position: fixed;
+  width: 100%;
   flex-direction: column;
 
   @media (min-width: ${theme.breakpoints.tablet}) {

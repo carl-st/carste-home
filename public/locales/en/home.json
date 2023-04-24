@@ -1,9 +1,12 @@
 {
   "description": "Full Stack Developer. JavaScript, React, Redux, Node.js, Front-End, Back-End.",
-  "title": "Karol Stępień - Senior Full Stack Engineer",
-  "pTitle": "About me",
-  "pLead": "What do I do?",
-  "p1": "Full Stack Developer. Over 5 years of commercial experience. Mainly used technologies: React, Next.js, Node.js, Nest.js, GraphQL, TypeScript, AWS. I work with clients from all around the world.",
-  "p2": "In free time casually having fun with Playstation, Nintendo Switch or GeForce Now.",
-  "p3": "Have you heard about Developer Glossary?"
+  "title": "Karol Stępień - Digital Products | Web & Mobile Applications | Full Stack Software Engineer | Software Engineering Manager",
+  "p1Title": "About me",
+  "p1Lead": "What do I do?",
+  "p11": "Full Stack Developer. Mainly used technologies: React, Next.js, Node.js, Nest.js, GraphQL, TypeScript. I work with clients from all around the world.",
+  "p12": "In free time casually having fun with Playstation, Nintendo Switch or GeForce Now.",
+  "p13": "Have you heard about Developer Glossary?",
+  "p2Title": "Projects",
+  "p2Lead": "Something to check out",
+  "p21": "Developer Glossary"
 }

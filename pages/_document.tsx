@@ -1,5 +1,11 @@
 import * as React from 'react';
-import Document, { DocumentContext } from 'next/document';
+import Document, {
+  Html,
+  Head,
+  Main,
+  NextScript,
+  DocumentContext,
+} from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
 interface DocumentProps {
@@ -31,5 +37,22 @@ export default class MyDocument extends Document<DocumentProps> {
     } finally {
       sheet.seal();
     }
+  }
+
+  render() {
+    return (
+      <Html>
+        <Head>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Raleway:wght@300&display=swap"
+            rel="stylesheet"
+          />
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    );
   }
 }

@@ -1,9 +1,12 @@
 {
   "description": "Full Stack Developer. JavaScript, React, Redux, Node.js, Front-End, Back-End",
-  "title": "Karol Stępień - Senior Full Stack Engineer",
-  "pTitle": "O mnie",
-  "pLead": "Czym się zajmuję?",
-  "p1": "Programista Web i iOS. Obecnie ponad 5 lat profesjonalnego doświadczenia. Głównie wykorzystywane technologie to React, Next.js, Node.js, Nest.js, GraphQL, TypeScript, AWS. Praca zarówno z klientami zagranicznymi jak i lokalnymi.",
-  "p2": "W wolnym czasie fan gier na Playstation, Nintendo Switch'a i GeForce Now.",
-  "p3": "Czy wiesz już o Glosariuszu Programisty?"
+  "title": "Karol Stępień - Digital Products | Web & Mobile Applications | Full Stack Software Engineer | Software Engineering Manager",
+  "p1Title": "O mnie",
+  "p1Lead": "Czym się zajmuję?",
+  "p11": "Programista Web i iOS. Głównie wykorzystywane technologie to React, Next.js, Node.js, Nest.js, GraphQL, TypeScript. Praca zarówno z klientami zagranicznymi jak i lokalnymi.",
+  "p12": "W wolnym czasie fan gier na Playstation, Nintendo Switch'a i GeForce Now.",
+  "p13": "Czy wiesz już o Glosariuszu Programisty?",
+  "p2Title": "Projekty",
+  "p2Lead": "Warto rzucić okiem",
+  "p21": "Glosariusz Programisty"
 }

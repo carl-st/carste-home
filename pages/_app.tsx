@@ -17,10 +17,6 @@ class Carste extends App {
         <Helmet>
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Raleway:wght@300&display=swap"
-            rel="stylesheet"
-          />
-          <link
             rel="preload"
             href="/fonts/Kielo-Regular.otf"
             as="font"

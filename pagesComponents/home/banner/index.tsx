@@ -1,6 +1,5 @@
 import React, { ComponentType } from 'react';
 import IconBar from '../../../components/IconBar';
-import { useTranslation } from 'next-i18next';
 import {
   Container,
   ImageContainer,
