@@ -1,5 +1,6 @@
 import React from 'react';
 import App from 'next/app';
+import { Analytics } from '@vercel/analytics/react';
 import { Helmet } from 'react-helmet';
 import { appWithTranslation } from 'next-i18next';
 import nextI18NextConfig from '../next-i18next.config';
@@ -33,6 +34,7 @@ class Carste extends App {
           />
         </Helmet>
         <GlobalStyles />
+        <Analytics />
         <Component {...pageProps} />
       </>
     );
