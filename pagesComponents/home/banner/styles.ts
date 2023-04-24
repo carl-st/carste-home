@@ -7,10 +7,12 @@ export const Container = styled.div`
   align-items: center;
   color: ${theme.colors.mainBrand};
   min-width: 100%;
+  margin-top: ${theme.sizes.mobileHeaderHeight};
   flex-direction: column;
 
   @media (min-width: ${theme.breakpoints.desktop}) {
     flex-direction: row;
+    margin-top: ${theme.sizes.desktopHeaderHeight};
   }
 `;
 
@@ -38,8 +40,8 @@ export const ImageContainer = styled.div`
 
 export const ProfileImage = styled(Image)`
   border: 4px solid ${theme.colors.mainBrand};
-  
+
   @media (min-width: ${theme.breakpoints.desktop}) {
-    margin-right: 48px;
+    margin-right: ${theme.spacings.xl};
   }
 `;

@@ -45,7 +45,7 @@ const Header: ComponentType = () => {
           href={router.pathname}
           locale={router.locale === 'pl' ? 'en' : 'pl'}
         >
-          <LanguageButton>{renderLanguageButtonLabel()}</LanguageButton>
+          <NavigationButton>{renderLanguageButtonLabel()}</NavigationButton>
         </Link>
       </NavigationButtonsContainer>
     </Navigation>

@@ -35,7 +35,6 @@ const GlobalStyles = createGlobalStyle`
   h1 {
     font-size: 2rem;
     font-family: ${theme.fontFamily.heading};
-    text-transform: uppercase;
     font-weight: 900;
   }
 

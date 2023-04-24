@@ -24,6 +24,13 @@ const theme = {
     warning: '#F59F17',
     danger: '#F44336',
   },
+  spacings: {
+    sm: '8px',
+    md: '16px',
+    lg: '24px',
+    xl: '32px',
+    xxl: '48px',
+  },
   sizes: {
     desktopHeaderHeight: '78px',
     mobileHeaderHeight: '107px',

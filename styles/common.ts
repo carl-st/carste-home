@@ -2,6 +2,17 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import theme from './theme';
 
+export const Flex = styled.div`
+  display: flex;
+  min-width: 100%;
+`;
+
+export const Column = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+`;
+
 export const PaddedSection = styled.section`
   display: flex;
   flex-direction: column;
@@ -10,7 +21,7 @@ export const PaddedSection = styled.section`
   align-items: center;
 
   @media (min-width: ${theme.breakpoints.tablet}) {
-    padding: 4rem 15%;
+    padding: 2rem 15%;
   }
 `;
 
