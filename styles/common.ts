@@ -5,12 +5,14 @@ import theme from './theme';
 export const Flex = styled.div`
   display: flex;
   min-width: 100%;
+  min-height: 100%;
+  justify-content: space-between;
+  align-items: end;
 `;
 
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
-  min-width: 100%;
 `;
 
 export const PaddedSection = styled.section`
@@ -59,12 +61,10 @@ export const YouTubeIframe = styled.iframe`
 
 export const SocialContainer = styled.div`
   display: flex;
-  justify-content: space-around;
-  width: auto;
+  justify-content: center;
   margin-bottom: 10px;
 
-  @media (min-width: ${theme.breakpoints.tablet}) {
-    width: auto;
+  @media (min-width: ${theme.breakpoints.desktop}) {
     justify-content: flex-start;
   }
 `;

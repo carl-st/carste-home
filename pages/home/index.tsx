@@ -23,13 +23,13 @@ const Home: NextPage = () => {
             alt: 'Profile picture',
           },
         ]}
-        >
+      >
         <PaddedSection>
           <Banner />
         </PaddedSection>
-        <Flex>
-          <Column>
-            <PaddedSection>
+        <PaddedSection>
+          <Flex>
+            <Column>
               <Paragraph title={t('p1Title')} lead={t('p1Lead')}>
                 <>
                   <p>{t('p11')}</p>
@@ -37,8 +37,7 @@ const Home: NextPage = () => {
                   <p>{t('p13')}</p>
                 </>
               </Paragraph>
-            </PaddedSection>
-            <PaddedSection>
+
               <Paragraph title={t('p2Title')} lead={t('p2Lead')}>
                 <>
                   <Link href="/home">
@@ -49,10 +48,12 @@ const Home: NextPage = () => {
                   </a>
                 </>
               </Paragraph>
-            </PaddedSection>
-          </Column>
-          <Greeting>Hello.</Greeting>
-        </Flex>
+            </Column>
+            {/* <div> */}
+              <Greeting>Hello.</Greeting>
+            {/* </div> */}
+          </Flex>
+        </PaddedSection>
       </Layout>
     </>
   );

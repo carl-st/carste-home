@@ -24,8 +24,8 @@ const Banner: ComponentType = () => (
         <br />
         Full Stack Software Engineer | Software Engineering Manager
       </h2>
-    </TextContainer>
     <IconBar />
+    </TextContainer>
   </Container>
 );
 
