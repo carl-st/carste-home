@@ -12,6 +12,7 @@ const theme = {
     desktop: '1024px',
   },
   colors: {
+    black: '#000000',
     background: '#FBFBFB',
     lightShades: '#F9F7FB',
     lightAccent: '#988581',

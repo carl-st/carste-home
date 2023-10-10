@@ -1,10 +1,10 @@
 import styled from 'styled-components';
+import Image from 'next/image';
 import theme from '../../../styles/theme';
 import PodcastLogo from '../../../public/img/podcast-logo.svg';
 
 export const Container = styled.div`
   align-items: center;
-  background-color: black;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -45,7 +45,7 @@ export const Logo = styled(PodcastLogo)`
   width: 100%;
 `;
 
-export const CoverImage = styled.img`
+export const CoverImage = styled(Image)`
   display: block;
   width: 100%;
   height: auto;
@@ -55,7 +55,7 @@ export const CoverImage = styled.img`
   }
 `;
 
-export const CoverImageWide = styled.img`
+export const CoverImageWide = styled(Image)`
   display: none;
 
   @media (min-width: ${theme.breakpoints.tablet}) {

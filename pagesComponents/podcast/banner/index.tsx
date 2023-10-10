@@ -15,9 +15,19 @@ const Banner: ComponentType = () => {
 
   return (
     <Container>
+        <CoverImage
+          height={1000}
+          width={1000}
+          src="/img/podcast-cover.png"
+          alt="podcast-cover"
+        />
       <CoverContainer>
-        <CoverImageWide src="/img/keywords-wide.png" alt="podcast-cover" />
-        <CoverImage src="/img/podcast-cover.png" alt="podcast-cover" />
+        <CoverImageWide
+          height={600}
+          width={1079}
+          src="/img/keywords-wide.png"
+          alt="podcast-cover"
+        />
       </CoverContainer>
       <NameContainer>
         <Logo />

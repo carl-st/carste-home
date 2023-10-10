@@ -25,7 +25,7 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     box-sizing: border-box;
-    background-color: ${theme.colors.darkShades};
+    background-color: ${theme.colors.black};
     background-size: cover;
     background-position: center;
     font-family: ${theme.fontFamily.paragraph};
